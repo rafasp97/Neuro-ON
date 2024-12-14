@@ -1,0 +1,46 @@
+:root{
+  --background: linear-gradient(112deg, #222127 2.25%, rgba(7, 7, 7, 0.95) 64.03%);;
+  --black: #222127;
+  --words: #F5F4FA;
+  --color-elements: #424668;
+  --color-elements-active: #363957;
+  --color-elements-hover: #2C2F47; 
+  --buttons-background: linear-gradient(94deg, #424668 0%, #2C2F47 84%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+button{
+  background: var(--buttons-background);
+  color: var(--words);
+  font-weight: 600;
+  padding: 0.3em;
+  width: 9em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+}
+
+button:hover{
+  background: var(--color-elements-hover);
+}
+
+button:active{
+  background: var(--color-elements-active);
+  color: #000;
+}
+
+.icon-button{
+  width: 1.1em;
+  margin-left: 0.8em;
+  position: relative;
+  top: 0.15em;
+}
+
+button:active .icon-button {
+  content: url('/public/images/icon-button-click.png'); /* Alteração do src da imagem */
+}

@@ -1,0 +1,12 @@
+.neuro{
+    font-size: 3em;
+    padding-top: 2.5em;
+    color: #dfdede    ;
+}
+.on{
+    background: var(--buttons-background);
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
