@@ -1,7 +1,8 @@
 .navbar-home{
     position: absolute; 
     width: 100%;
-    top: 3em;
+    top: 2em;
+    z-index: 1001;
 }
 
 .navbar-home > ul, .navbar-explore > ul{
@@ -9,13 +10,13 @@
     flex-direction: row;
     justify-content: center;
     gap: 0.5em;
-
 }
 
 .navbar-home > ul > li, .navbar-explore > ul > li{
     list-style-type: none;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-link{
@@ -29,22 +30,53 @@
     transition: background 0.3s ease, color 0.3s ease;
 }
 
-.nav-link:hover{
-    background-color: var(--color-elements);
-    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+.nav-link:active .icon-menu-home{
+    content: url('/public/images/icon-home-click.png');
 }
 
-.nav-link:active{
-    background: var(--color-elements-active);
-    color: var(--black);
+.nav-link:active .icon-menu-about{
+    content: url('/public/images/icon-about-click.png');
+}
+
+.nav-link:active .icon-menu-members{
+    content: url('/public/images/icon-group-click.png');
+}
+
+.icon-menu-home{
+    width: 35px;
+    filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.9));
+}
+
+.icon-menu-about{
+    width: 25px;
+    filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.9));
+}
+
+.icon-menu-members{
+    width: 30px;
+    filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.9));
+}
+
+@media (max-width: 767px){
+    .navbar-p{
+        font-size: 0.5em;
+    }
+    .home-p{
+        position: relative;
+        bottom: 0.6em;
+    }
+    .members-p{
+        position: relative;
+        bottom: 0.35em;
+    }
 }
 
 @media (min-width: 768px){
     .navbar-home{
-        right: 5%;
         top: 1em;
         font-size: 1.1em;
+        width: 20em;
+        left: 16em;
     }
     .navbar-home .nav-link:hover{
         box-shadow: none;
@@ -53,10 +85,20 @@
     .navbar-home .nav-link:active{
         color: var(--words);
     }
+    .icon-menu-home, .icon-menu-about, .icon-menu-members{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .navbar-home{
+        left: 20em;
+        font-size: 1.2em;
+    }
 }
 
 @media (min-width: 1440px){
     .navbar-home{
-        right: 15%;
+        left: 29em;
     }
 }

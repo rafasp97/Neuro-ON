@@ -21,9 +21,24 @@ const Navbar = () => {
   return (
     <nav className={page === '/' ? 'navbar-home' : 'navbar-explore'}>
         <ul>
-            <li><NavLink to="/" className="nav-link">Início</NavLink></li>
-            <li><NavLink to="/" className="nav-link" onClick={() => handleScroll('about')}>Sobre</NavLink></li>
-            <li><NavLink to="/" className="nav-link" onClick={() => handleScroll('members')}>Membros</NavLink></li>
+            <li>
+              <NavLink to="/" className="nav-link">
+                <img src='images/icon-home.png' className="icon-menu-home"/>
+                <p className="navbar-p home-p">Início</p>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" className="nav-link" onClick={() => handleScroll('about')}>
+                <img src='images/icon-about.png' className="icon-menu-about"/>
+                <p className="navbar-p">Sobre</p>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/" className="nav-link" onClick={() => handleScroll('members')}>
+                <img src='images/icon-group.png' className="icon-menu-members"/>
+                <p className="navbar-p members-p">Membros</p>
+              </NavLink>
+            </li>
         </ul>
     </nav>
   )

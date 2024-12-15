@@ -1,9 +1,8 @@
-.section-home{
+.section-home, .section-members{
     background: var(--background);
     height: 100vh;
     color: var(--words);
 }
-
 
 .section-home h4{
     font-size: 0.8em;
@@ -38,6 +37,185 @@
     margin-top: 3em;
 }
 
-@media (min-width: 768px){
 
+.section-about{
+    background: var(--words);
+    height: 100vh;
+    color: var(--black);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.section-about h2{
+    z-index: 10;
+    position: relative;
+    width: 88%;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+    color: var(--background);
+}
+
+.section-about p{
+    z-index: 10;
+    font-size: 0.8em;
+    width: 88%;
+    text-align: justify;
+    font-weight: 400;
+    padding-top: 0.5em;
+}
+
+.background-about{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 15em;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+.line{
+    width: 88%;
+    height: 3px;
+    margin-bottom: 2em;
+}
+
+
+
+@media (min-width: 768px){
+    .section-home{
+        display: flex;
+        flex-direction: row;
+    }
+    .title{
+        height: 100%;
+        width: 12em;
+    }
+    .title h4{
+        position: absolute;
+        z-index: 1000;
+        left: 2.5em;
+        top: 35em;
+        font-size: 0.65em;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    }
+    .icons{
+        width: 7em;
+        padding-left: 1.5em;
+        padding-top: 1.5em;
+    }
+    .icon{
+        width: 3em;
+    }
+    .images-panel{
+        height: 100%;
+        padding-left: 6em;
+    }
+    .button-explore{
+        position: absolute;
+        top: 25em;
+        left: 1.2em;
+    }
+    .section-about h2, .section-members h2{
+        width: 15em;
+        font-size: 2.5em;
+    }
+    .section-about p{
+        font-size: 0.9em;
+        width: 39em;
+        text-align: justify;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+        line-height: 1.5;
+        font-weight: 600;
+    }
+    
+    .background-about{
+        position: absolute;
+        width: 42em;
+        left: 0.5em;
+        top: 3em;
+        z-index: 1;
+        opacity: 0.7;
+    }
+    
+    .line{
+        margin-bottom: 4em;
+        z-index: 1000;
+        width: 35em;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .images-panel{
+        padding-left: 12em;
+    }
+    .title h4{
+        left: 5.1em;
+        top: 32em;
+        font-size: 0.7em;
+        letter-spacing: 1.7px;
+    }
+    .icons{
+        padding-left: 3.5em;
+    }
+    .button-explore{
+        left: 2.8em;
+    }
+    .section-about h2, .section-members h2{
+        font-size: 3em;
+    }
+    .section-about p{
+        font-size: 0.9em;
+        width: 50em;
+        font-weight: 500;
+        padding-top: 0.5em;
+    }
+    .line{
+        width: 45em;
+    }
+    
+}
+
+@media (min-width: 1440px){
+    .images-panel{
+        padding-left: 22em;
+    }
+    .title h4{
+        left: 5.2em;
+        top: 30em;
+        letter-spacing: 2.3px;
+        font-size: 1em;
+    }
+    .icons{
+        width: 13em;
+        padding-top: 2em;
+    }
+    .icon{
+        width: 4em;
+    }
+    .button-explore{
+        left: 3.3em;
+        top: 24em;
+        font-size: 1.5em;
+    }
+    .background-about{
+        left: 2em;
+        width: 50em;
+    }
+    .section-about h2, .section-members h2{
+        font-size: 3.5em;
+    }
+    .section-about p{
+        font-size: 1em;
+        width: 60em;
+        font-weight: 400;
+    }
+    .line{
+        width: 60em;
+    }
 }

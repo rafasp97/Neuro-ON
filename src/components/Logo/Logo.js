@@ -5,21 +5,16 @@ import { motion } from 'framer-motion';
 // Style
 import './Logo.css';
 
-const Logo = () => {
+const Logo = ( {className} ) => {
   return (
-    <h1 className='neuro'>
+    <div>
+         {/*recebe 'neuroHome' ou 'neuroIcon'*/}
+        <h1 className={`neuro ${className}`}>
         Neuro{' '}
-        <motion.span
+        <motion.span className='on1'
             style={{
-                display: 'inline-block',
-                background: 'linear-gradient(94deg, #424668 0%, #2C2F47 84%)', // Gradiente do fundo
-                WebkitBackgroundClip: 'text', // Aplica o gradiente apenas ao texto
-                color: 'transparent', // O texto precisa ser transparente para o gradiente ser visível
-                padding: '0 5px',
-                background: 'linear-gradient(45deg, #ffffff, #dcdcdc)', // Gradiente sutil branco para cinza
-                WebkitBackgroundClip: 'text', // Aplica o gradiente apenas ao texto
-                color: 'transparent', // O texto precisa ser transparente para o gradiente ser visível
-            }}
+                borderRadius: '5px',
+                }}
             animate={{
                 background: [
                 'linear-gradient(94deg, #424668 0%, #2C2F47 84%)',
@@ -31,22 +26,26 @@ const Logo = () => {
             }}
             transition={{
                 duration: 5,
-                ease: 'linear', // Transição contínua e constante
-                repeat: Infinity, // Animação infinita sem voltar
+                ease: 'linear', 
+                repeat: Infinity, 
                 repeatType: 'loop',
             }}
             >
-            <span className='on'
+            <span
                 style={{
-                background: 'linear-gradient(45deg, #ffffff, #dcdcdc)', // Gradiente de branco a cinza
-                WebkitBackgroundClip: 'text', // Aplica o gradiente ao texto
-                color: 'transparent', // Deixa o texto transparente para o gradiente aparecer
+                background: 'linear-gradient(45deg, #ffffff, #dcdcdc)', 
+                WebkitBackgroundClip: 'text', 
+                color: 'transparent', 
+                paddingLeft: '0.2em',
+                paddingRight: '0.2em',
                 }}
             >
                 ON
             </span>
-            </motion.span>
-        </h1>
+        </motion.span>
+    </h1>
+    </div>
+    
   )
 }
 
