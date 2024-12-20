@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo} from 'react';
 
 // Style
 import './Home.css';
@@ -12,14 +12,14 @@ import Logo from '../../components/Logo/Logo';
 function Home() {
     
     // objeto para 'arquivar' as imagens
-    const images = [
+    const images = useMemo(() => [
         '/images/panel/1.jpg',
         '/images/panel/2.jpg',
         '/images/panel/3.jpg',
         '/images/panel/4.jpg',
         '/images/panel/5.jpg',
         '/images/panel/6.jpg',
-        ];
+    ], []);
 
     // Controla a imagem atual do painel
     const [imagePanel, setImagePanel] = useState(() => images[Math.floor(Math.random() * images.length)]);
@@ -37,7 +37,7 @@ function Home() {
 
         // Limpa o intervalo quando o componente for desmontado
         return () => clearInterval(intervalId);
-    }, []);  
+    }, [images]);  
 
   return (
     <div>
@@ -47,8 +47,8 @@ function Home() {
                     <Logo className='neuroHome'/>
                     <h4>Medium length hero headline goes here</h4>
                     <div className="icons">
-                        <img src='/images/ufs.png' className='icon'/>
-                        <img src='/images/ufs.png' className='icon'/>
+                        <img src='/images/ufs.png' alt="icon" className='icon'/>
+                        <img src='/images/ufs.png' alt="icon" className='icon'/>
                 </div>
                 </div>
             </div>
@@ -65,15 +65,15 @@ function Home() {
             </div>
             <button className='button-explore'>
                 Explore
-                <img src='images/icon-button.png' className="icon-button"  />
+                <img src='images/icon-button.png' alt="icon" className="icon-button"  />
             </button>
         </section>
 
         <section id="about" className='section-about'>
-            <img src='images/brain-background.png' className='background-about'/>
+            <img src='images/brain-background.png' alt="img" className='background-about'/>
             <Logo className='neuro-icon'/>
             <h2>SOBRE O PROJETO</h2>
-            <img src='images/line.png' className='line'/>
+            <img src='images/line.png'  alt="img" className='line'/>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id molestie sem. Nunc vel mi eget quam ornare pulvinar. Mauris gravida, enim ac vestibulum consectetur, dolor quam sollicitudin purus, vitae semper metus dui at mauris. In hac habitasse platea dictumst. Vivamus volutpat iaculis accumsan. Vivamus ultrices finibus tincidunt. Aenean ut scelerisque massa.
             </p>
@@ -91,7 +91,7 @@ function Home() {
                 <div className="contact-box">
                     <h2>LOCALIZAÇÃO</h2>
                     <div className="location">
-                        <img src='images/icon-location.png' className="icon-location"/>
+                        <img src='images/icon-location.png'  alt="img" className="icon-location"/>
                         <p>Departamento de Morfologia,<br></br>
                         Centro de Ciências biológicas da Saúde, UFS</p>
                     </div>
@@ -101,41 +101,41 @@ function Home() {
                     <div className="founders">
                         <div className="founders1">
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
                                 <p>Airton Lima Batalha Filho <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
                                 <p>Aneliese Gabriele Feitosa Lorenz <br></br> Graduanda de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
                                 <p>Bruno Souza Santana Araujo <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
                                 <p>Flavio de Souza Barros A. Junior <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png' alt="img" className="icon-contact"/>
                                 <p>João Gabriel Santana Trindade <br></br> Graduando de Medicina</p>
                             </div>
                         </div>
                         <div className="founders2">
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
                                 <p>Larissa Santos Silva <br></br> Graduanda de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
                                 <p>Leonardo Machado Martins <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png' alt="img"  className="icon-contact"/>
                                 <p>Pedro Salgueiro Pereira de Castro <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
                                 <p>Prof. Dr. Diogo Costa Garção <br></br> Orientador</p>
                             </div>                       
                         </div>
@@ -146,7 +146,7 @@ function Home() {
             <div className='form-box'>
                 <form>
                     <div>
-                        <img src='images/icon-contact-black.png' className="icon-contact-black"/>
+                        <img src='images/icon-contact-black.png'  alt="icon" className="icon-contact-black"/>
                     </div>
                     <p className='fale-conosco'>Fale conosco</p>
                     <label for="titulo">Título:</label>
