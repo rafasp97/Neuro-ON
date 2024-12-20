@@ -6,24 +6,24 @@ Este projeto foi desenvolvido como um **freelancer** 💼, contratado por estuda
 
 ## 📝 Funcionalidades
 
-- • **Exploração interativa:** Explore as principais regiões do sistema nervoso com detalhes neuroanatômicos de fácil acesso.
-- • **Design intuitivo:** Interface limpa e amigável para facilitar a navegação.
-- • **Recursos visuais dinâmicos:** Imagens interativas para entender melhor a neuroanatomia humana.
+- **Exploração interativa:** Explore as principais regiões do sistema nervoso com detalhes neuroanatômicos de fácil acesso.
+- **Design intuitivo:** Interface limpa e amigável para facilitar a navegação.
+- **Recursos visuais dinâmicos:** Imagens interativas para entender melhor a neuroanatomia humana.
 
 ## 🔧 Tecnologias Utilizadas
 
 Este projeto foi desenvolvido utilizando as melhores tecnologias para garantir performance e escalabilidade:
-• **React** ⚛️ para a interface de usuário interativa
-• **React Router** 🛣️ para navegação entre páginas
-• **EmailJS** 📧 para envio de emails diretamente da aplicação
-• **Framer Motion** 🎞️ para animações e transições suaves e interativas
+- **React** ⚛️ para a interface de usuário interativa
+- **React Router** 🛣️ para navegação entre páginas
+- **EmailJS** 📧 para envio de emails diretamente da aplicação
+- **Framer Motion** 🎞️ para animações e transições suaves e interativas
 
 ## 🚀 Objetivos do Projeto
 
 O **NeuroON** tem como missão:
-• **Facilitar** o aprendizado da neuroanatomia humana através de uma interface digital intuitiva.
-• **Proporcionar** uma experiência visual e interativa para estudar a estrutura do cérebro e do sistema nervoso.
-• **Criar** um recurso acessível para estudantes de medicina, profissionais da saúde e interessados em neurociência.
+- **Facilitar** o aprendizado da neuroanatomia humana através de uma interface digital intuitiva.
+- **Proporcionar** uma experiência visual e interativa para estudar a estrutura do cérebro e do sistema nervoso.
+- **Criar** um recurso acessível para estudantes de medicina, profissionais da saúde e interessados em neurociência.
 
 ## 🎨 Protótipo Interativo
 
@@ -49,7 +49,7 @@ O **NeuroON** já está disponível e funcionando na web!
 ## 📞 Entre em Contato
 
 Caso tenha dúvidas ou queira conversar sobre o desenvolvimento desse projeto, sinta-se à vontade para entrar em contato! 🚀
-**E-mail:** rafaelsprata@outlook.com
-**Telefone:** (79) 99848-4571
+- **E-mail:** rafaelsprata@outlook.com
+- **Telefone:** (79) 99848-4571
 
 
