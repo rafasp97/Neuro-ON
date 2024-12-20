@@ -6,9 +6,9 @@ Este projeto foi desenvolvido como um **freelancer** 💼, contratado por estuda
 
 ## 📝 Funcionalidades
 
--• **Exploração interativa:** Explore as principais regiões do sistema nervoso com detalhes neuroanatômicos de fácil acesso.
--• **Design intuitivo:** Interface limpa e amigável para facilitar a navegação.
--• **Recursos visuais dinâmicos:** Imagens interativas para entender melhor a neuroanatomia humana.
+- • **Exploração interativa:** Explore as principais regiões do sistema nervoso com detalhes neuroanatômicos de fácil acesso.
+- • **Design intuitivo:** Interface limpa e amigável para facilitar a navegação.
+- • **Recursos visuais dinâmicos:** Imagens interativas para entender melhor a neuroanatomia humana.
 
 ## 🔧 Tecnologias Utilizadas
 
