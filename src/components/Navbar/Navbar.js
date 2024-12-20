@@ -3,7 +3,7 @@
 import { NavLink} from "react-router-dom"
 
 // Style
-import styles from './Navbar.css';
+import './Navbar.css';
 
 const Navbar = () => {
 
@@ -19,24 +19,28 @@ const Navbar = () => {
       };
 
   return (
-    <nav className={page === '/' ? 'navbar-home' : 'navbar-explore'}>
+    <nav className={(page === '/' ||
+     page === 'inicio' ||
+      page === 'sobre' ||
+       page === 'contato')
+        ? 'navbar-home' : 'navbar-explore'}>
         <ul>
             <li>
-              <NavLink to="/" className="nav-link">
+              <NavLink to="/inicio" className="nav-link">
                 <img src='images/icon-home.png' className="icon-menu-home"/>
                 <p className="navbar-p home-p">Início</p>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" className="nav-link" onClick={() => handleScroll('about')}>
+              <NavLink to="/sobre" className="nav-link" onClick={() => handleScroll('about')}>
                 <img src='images/icon-about.png' className="icon-menu-about"/>
                 <p className="navbar-p">Sobre</p>
               </NavLink>
             </li>
             <li>
-              <NavLink to="/" className="nav-link" onClick={() => handleScroll('members')}>
-                <img src='images/icon-group.png' className="icon-menu-members"/>
-                <p className="navbar-p members-p">Membros</p>
+              <NavLink to="/contato" className="nav-link" onClick={() => handleScroll('contact')}>
+                <img src='images/icon-contact.png' className="icon-menu-contact"/>
+                <p className="navbar-p members-p">Contato</p>
               </NavLink>
             </li>
         </ul>

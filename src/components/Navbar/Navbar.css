@@ -1,4 +1,4 @@
-.navbar-home{
+.navbar-home, .navbar-explore{
     position: absolute; 
     width: 100%;
     top: 2em;
@@ -38,8 +38,8 @@
     content: url('/public/images/icon-about-click.png');
 }
 
-.nav-link:active .icon-menu-members{
-    content: url('/public/images/icon-group-click.png');
+.nav-link:active .icon-menu-contact{
+    content: url('/public/images/icon-contact-click.png');
 }
 
 .icon-menu-home{
@@ -52,8 +52,8 @@
     filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.9));
 }
 
-.icon-menu-members{
-    width: 30px;
+.icon-menu-contact{
+    width: 35px;
     filter: drop-shadow(0 0 5px rgba(2, 2, 2, 0.9));
 }
 
@@ -67,38 +67,38 @@
     }
     .members-p{
         position: relative;
-        bottom: 0.35em;
+        bottom: 0.40em;
     }
 }
 
 @media (min-width: 768px){
-    .navbar-home{
+    .navbar-home, .navbar-explore{
         top: 1em;
         font-size: 1.1em;
         width: 20em;
         left: 16em;
     }
-    .navbar-home .nav-link:hover{
+    .navbar-home .nav-link:hover, .navbar-explore .nav-link:hover{
         box-shadow: none;
         background: transparent;
     }
-    .navbar-home .nav-link:active{
+    .navbar-home .nav-link:active, .navbar-explore .nav-link:active{
         color: var(--words);
     }
-    .icon-menu-home, .icon-menu-about, .icon-menu-members{
+    .icon-menu-home, .icon-menu-about, .icon-menu-contact{
         display: none;
     }
 }
 
 @media (min-width: 1024px){
-    .navbar-home{
+    .navbar-home, .navbar-explore{
         left: 20em;
         font-size: 1.2em;
     }
 }
 
 @media (min-width: 1440px){
-    .navbar-home{
+    .navbar-home, .navbar-explore{
         left: 29em;
     }
 }

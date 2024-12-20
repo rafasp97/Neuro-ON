@@ -1,3 +1,13 @@
+/*impede que as imagens sejam baixadas*/
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
+textarea {
+  resize: none;
+}
+
 .App {
   text-align: center;
 }

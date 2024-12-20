@@ -1,4 +1,4 @@
-.section-home, .section-members{
+.section-home, .section-contact{
     background: var(--background);
     height: 100vh;
     color: var(--words);
@@ -36,7 +36,6 @@
 .section-home button{
     margin-top: 3em;
 }
-
 
 .section-about{
     background: var(--words);
@@ -82,6 +81,115 @@
     margin-bottom: 2em;
 }
 
+.section-contact{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 5em;
+    gap: 1em;
+}
+
+.section-contact h2{
+    font-size: 1.2em;
+    display: flex;
+    padding-bottom: 0.3em;
+}
+
+.section-contact p{
+    font-size: 0.5em;
+    text-align: left;
+}
+
+.contact-founders{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.location, .founders-icon-name{
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.location{
+    border-left: solid 3px var(--words);
+}
+
+.founders{
+    display: flex;
+    flex-direction: row;
+    border-left: solid 3px var(--words);
+}
+
+.founders1, .founders2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.icon-location{
+    width: 0.7em;
+    height: 1em;
+}
+.icon-contact{
+    width: 1em;
+    height: 1em;
+}
+
+.form-box{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.3em;
+    background: var(--words);
+    padding: 1em;
+    padding-bottom: 2em;
+    border-radius: 10px;
+    margin-top: 2em;
+}
+
+.icon-contact-black{
+    width: 50px;
+}
+
+form p{
+    font-size: 1em !important;
+    font-weight: bold;
+}
+
+input, label, .section-contact button, textarea{
+    font-size: 0.7em;
+    border-radius: 10px;
+}
+
+input, label, form p{
+    text-align: left;
+    color: #222127;
+    font-size: 0.7em;
+}
+
+label{
+    font-weight: 700;
+}
+
+input, textarea{
+    padding: 0.3em 0.6em;
+    border: 1px solid #ccc;
+}
+
+textarea{
+    width: 100% !important;
+    box-sizing: border-box;
+}
+
 
 
 @media (min-width: 768px){
@@ -119,7 +227,7 @@
         top: 25em;
         left: 1.2em;
     }
-    .section-about h2, .section-members h2{
+    .section-about h2{
         width: 15em;
         font-size: 2.5em;
     }
@@ -147,6 +255,45 @@
         z-index: 1000;
         width: 35em;
     }
+
+    .section-contact{
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 3em;
+    }
+    .section-contact h2{
+        font-size: 2em;
+    }
+    .contact-founders{
+        font-size: 1.4em;
+    }
+    .founders{
+        flex-direction: column;
+    }
+    .form-box{
+        width: 20em;
+    }
+    form{
+        height: 32em;
+        width: 20em;
+    }
+    .icon-contact-black{
+        width: 80px;
+        padding-top: 1em;
+    }
+    .fale-conosco{
+        font-size: 1.5em !important;
+    }
+    input, label, textarea{
+        font-size: 0.8em;
+    }
+    input{
+        margin-bottom: 1em;
+    }
+    .section-contact button{
+        font-size: 1em;
+        margin-top: 1em;
+    }
     
 }
 
@@ -166,7 +313,7 @@
     .button-explore{
         left: 2.8em;
     }
-    .section-about h2, .section-members h2{
+    .section-about h2{
         font-size: 3em;
     }
     .section-about p{
@@ -177,6 +324,9 @@
     }
     .line{
         width: 45em;
+    }
+    .form-box{
+        width: 25em;
     }
     
 }
@@ -207,7 +357,7 @@
         left: 2em;
         width: 50em;
     }
-    .section-about h2, .section-members h2{
+    .section-about h2{
         font-size: 3.5em;
     }
     .section-about p{
@@ -217,5 +367,11 @@
     }
     .line{
         width: 60em;
+    }
+    .form-box{
+        width: 30em;
+    }
+    form{
+        padding: 2em;
     }
 }

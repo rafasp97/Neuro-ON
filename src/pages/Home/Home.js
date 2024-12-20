@@ -13,8 +13,12 @@ function Home() {
     
     // objeto para 'arquivar' as imagens
     const images = [
-        '/images/coracao.jpg',
-        '/images/esqueleto.jpg',
+        '/images/panel/1.jpg',
+        '/images/panel/2.jpg',
+        '/images/panel/3.jpg',
+        '/images/panel/4.jpg',
+        '/images/panel/5.jpg',
+        '/images/panel/6.jpg',
         ];
 
     // Controla a imagem atual do painel
@@ -82,12 +86,78 @@ function Home() {
 
         </section>
 
-        <section id="members" className='section-members'>
-            <h2>Integrantes</h2>
-            <p>Conteúdo da seção Integrantes</p>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-            <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <section id="contact" className='section-contact'>
+            <div className="contact-founders">
+                <div className="contact-box">
+                    <h2>LOCALIZAÇÃO</h2>
+                    <div className="location">
+                        <img src='images/icon-location.png' className="icon-location"/>
+                        <p>Departamento de Morfologia,<br></br>
+                        Centro de Ciências biológicas da Saúde, UFS</p>
+                    </div>
+                </div>
+                <div className="founders-box">
+                    <h2>FUNDADORES</h2>
+                    <div className="founders">
+                        <div className="founders1">
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Airton Lima Batalha Filho <br></br> Graduando de Medicina</p>
+                            </div>
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Aneliese Gabriele Feitosa Lorenz <br></br> Graduanda de Medicina</p>
+                            </div>
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Bruno Souza Santana Araujo <br></br> Graduando de Medicina</p>
+                            </div>
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Flavio de Souza Barros A. Junior <br></br> Graduando de Medicina</p>
+                            </div>
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>João Gabriel Santana Trindade <br></br> Graduando de Medicina</p>
+                            </div>
+                        </div>
+                        <div className="founders2">
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Larissa Santos Silva <br></br> Graduanda de Medicina</p>
+                            </div>
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Leonardo Machado Martins <br></br> Graduando de Medicina</p>
+                            </div>
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Pedro Salgueiro Pereira de Castro <br></br> Graduando de Medicina</p>
+                            </div>
+                            <div className="founders-icon-name">
+                                <img src='images/icon-founders.png' className="icon-contact"/>
+                                <p>Prof. Dr. Diogo Costa Garção <br></br> Orientador</p>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='form-box'>
+                <form>
+                    <div>
+                        <img src='images/icon-contact-black.png' className="icon-contact-black"/>
+                    </div>
+                    <p className='fale-conosco'>Fale conosco</p>
+                    <label for="titulo">Título:</label>
+                    <input type="text" id="titulo" name="titulo" required placeholder="Digite um título"/>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"/>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </div>
   );
