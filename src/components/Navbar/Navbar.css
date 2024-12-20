@@ -5,6 +5,14 @@
     z-index: 1001;
 }
 
+.navbar-home{
+    border: solid blue 1px;
+}
+
+.navbar-explore{
+    border: solid red 1px;
+}
+
 .navbar-home > ul, .navbar-explore > ul{
     display: flex;
     flex-direction: row;
@@ -72,18 +80,33 @@
 }
 
 @media (min-width: 768px){
-    .navbar-home, .navbar-explore{
+    .navbar-home{
         top: 1em;
         font-size: 1.1em;
         width: 20em;
         left: 16em;
     }
-    .navbar-home .nav-link:hover, .navbar-explore .nav-link:hover{
+    .navbar-explore{
+        top: 1em;
+        font-size: 1.1em;
+        width: 100%;
+    }
+    .navbar-home .nav-link:hover{
         box-shadow: none;
         background: transparent;
     }
-    .navbar-home .nav-link:active, .navbar-explore .nav-link:active{
+    .navbar-explore .nav-link:hover{
+        background: var(--color-elements-hover);
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    .navbar-home .nav-link:active{
         color: var(--words);
+    }
+    .navbar-explore .nav-link:active{
+        color: var(--background);
+        background: var(--color-elements-active);
     }
     .icon-menu-home, .icon-menu-about, .icon-menu-contact{
         display: none;
@@ -91,14 +114,14 @@
 }
 
 @media (min-width: 1024px){
-    .navbar-home, .navbar-explore{
+    .navbar-home{
         left: 20em;
         font-size: 1.2em;
     }
 }
 
 @media (min-width: 1440px){
-    .navbar-home, .navbar-explore{
+    .navbar-home{
         left: 29em;
     }
 }

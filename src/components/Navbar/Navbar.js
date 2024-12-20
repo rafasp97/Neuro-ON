@@ -1,16 +1,16 @@
 
 // React Router
 import { NavLink} from "react-router-dom"
+import { useLocation } from 'react-router-dom';
 
 // Style
 import './Navbar.css';
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
 
-    //verifica qual página está
-    const page = window.location.pathname;
 
-    //função para rolamento na página
+    //função para rolamento automático na página
     const handleScroll = (id) => {
         const element = document.getElementById(id);
         if (element) {
@@ -18,12 +18,31 @@ const Navbar = () => {
         }
       };
 
+
+    const location = useLocation();
+    const [navClass, setNavClass] = useState('navbar-home');
+
+    useEffect(() => {
+
+      const page = location.pathname;
+
+      if(['/', '/inicio', '/sobre', '/contato'].includes(page)){
+        setNavClass('navbar-home')
+      }
+      else{
+        setNavClass('navbar-explore')
+      }
+     
+      
+      //desmontar componente
+      return () => {
+        
+      };
+    }, [location.pathname]);
+    
+
   return (
-    <nav className={(page === '/' ||
-     page === 'inicio' ||
-      page === 'sobre' ||
-       page === 'contato')
-        ? 'navbar-home' : 'navbar-explore'}>
+    <nav className={navClass}>
         <ul>
             <li>
               <NavLink to="/inicio" className="nav-link">

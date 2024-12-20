@@ -1,0 +1,5 @@
+.explorePage{
+    background: var(--background);
+    height: 300vh;
+    color: var(--words);
+}

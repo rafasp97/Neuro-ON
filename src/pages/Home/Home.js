@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 import { useState, useEffect, useMemo} from 'react';
 import { useInView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom';
 
 // Style
 import './Home.css';
@@ -14,6 +15,9 @@ import Logo from '../../components/Logo/Logo';
 import {animatedText, opacity} from '../../variants/AnimatedVariants'
 
 function Home() {
+
+    // permite navegação para outros endereços
+    const navigate = useNavigate();
     
     // objeto para 'arquivar' as imagens
     const images = useMemo(() => [
@@ -75,7 +79,7 @@ function Home() {
                     transition={{ duration: 2 }} 
                 />
             </div>
-            <button className='button-explore'>
+            <button className='button-explore' onClick={() => navigate('/explore')}>
                 Explore
                 <img src='images/icon-button.png' alt="icon" className="icon-button"  />
             </button>
