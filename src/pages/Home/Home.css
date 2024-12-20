@@ -91,13 +91,13 @@
 }
 
 .section-contact h2{
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     padding-bottom: 0.3em;
 }
 
 .section-contact p{
-    font-size: 0.5em;
+    font-size: 0.3em;
     text-align: left;
 }
 
@@ -131,12 +131,12 @@
 }
 
 .icon-location{
-    width: 0.7em;
-    height: 1em;
+    width: 0.5em;
+    height: 0.7em;
 }
 .icon-contact{
-    width: 1em;
-    height: 1em;
+    width: 0.7em;
+    height: 0.7em;
 }
 
 .form-box{
@@ -264,6 +264,9 @@ textarea{
     .section-contact h2{
         font-size: 2em;
     }
+    .section-contact p{
+        font-size: 0.5em;
+    }
     .contact-founders{
         font-size: 1.4em;
     }
@@ -293,6 +296,14 @@ textarea{
     .section-contact button{
         font-size: 1em;
         margin-top: 1em;
+    }
+    .icon-location{
+        width: 0.7em;
+        height: 1em;
+    }
+    .icon-contact{
+        width: 1em;
+        height: 1em;
     }
     
 }
