@@ -1,9 +1,9 @@
 # NeuroON 🧠💻
-<div style="text-align: justify;">
+
 Bem-vindo ao **NeuroON!** 🌟 
 Este projeto é um atlas de neuroanatomia humana focado no sistema nervoso central, criado com o poder do React 🚀. O objetivo é proporcionar uma maneira interativa e envolvente para estudar e explorar o corpo humano de forma clara e precisa.
 Este projeto foi desenvolvido como um **freelancer** 💼, contratado por estudantes de medicina da UFS (Universidade Federal de Sergipe), com o intuito de fornecer uma ferramenta prática para estudantes, profissionais da saúde e entusiastas da neuroanatomia 🧑‍⚕️. A ideia é oferecer uma plataforma fácil de usar para navegar pelas estruturas do cérebro e sistema nervoso de maneira intuitiva.
-</div>
+
 ## 📝 Funcionalidades
 
 • **Exploração interativa:** Explore as principais regiões do sistema nervoso com detalhes neuroanatômicos de fácil acesso.
@@ -42,10 +42,10 @@ O **NeuroON** já está disponível e funcionando na web!
 *Clique no link para visualizar o website!*
 
 ## 🤝 Agradecimentos
-<div style="text-align: justify;">
+
   Este foi o meu primeiro projeto como **freelancer** 💼, e não poderia estar mais feliz com o resultado! 🎉 Foi uma experiência incrível poder colaborar com esses clientes, que confiaram em mim para criar uma ferramenta tão importante e interativa para o aprendizado da neuroanatomia humana.
   Agradeço profundamente pela oportunidade de trabalhar em algo tão significativo e desafiador. Desenvolver o **NeuroON** foi uma jornada emocionante e cheia de aprendizado, e estou muito grato por fazer parte desse projeto. 🙏
-</div>
+
 ## 📞 Entre em Contato
 
 Caso tenha dúvidas ou queira conversar sobre o desenvolvimento desse projeto, sinta-se à vontade para entrar em contato! 🚀
