@@ -59,7 +59,7 @@
 
 .section-about p{
     z-index: 10;
-    font-size: 0.8em;
+    font-size: 0.75em;
     width: 88%;
     text-align: justify;
     font-weight: 400;
@@ -86,7 +86,7 @@
     flex-direction: column;
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 3em;
+    padding-top: 2em;
     gap: 1em;
 }
 
@@ -153,27 +153,28 @@ form{
     padding: 1em;
     padding-bottom: 2em;
     border-radius: 10px;
-    margin-top: 2em;
+    box-sizing: border-box;
+    height: 20em;
 }
 
 .icon-contact-black{
-    width: 50px;
+    width: 40px;
 }
 
 form p{
-    font-size: 1em !important;
+    font-size: 0.8em !important;
     font-weight: bold;
 }
 
 input, label, .section-contact button, textarea{
-    font-size: 0.7em;
+    font-size: 0.6em;
     border-radius: 10px;
 }
 
 input, label, form p{
     text-align: left;
     color: #222127;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }
 
 label{
@@ -279,6 +280,7 @@ textarea{
     form{
         height: 32em;
         width: 20em;
+        margin-top: 2em;
     }
     .icon-contact-black{
         width: 80px;
