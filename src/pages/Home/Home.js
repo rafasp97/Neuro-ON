@@ -21,11 +21,11 @@ function Home() {
         '/images/panel/6.jpg',
     ], []);
 
-    // Controla a imagem atual do painel
+    // 'Sorteia' uma imagem random para iniciar
     const [imagePanel, setImagePanel] = useState(() => images[Math.floor(Math.random() * images.length)]);
 
 
-    // Troca de imagem do painel
+    // Troca de imagem do painel em sequência com base na imagem escolhida inicialmente
     useEffect(() => {
         const intervalId = setInterval(() => {
             setImagePanel(prevImage => {
