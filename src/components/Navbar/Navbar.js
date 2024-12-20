@@ -27,19 +27,19 @@ const Navbar = () => {
         <ul>
             <li>
               <NavLink to="/inicio" className="nav-link">
-                <img src='images/icon-home.png' className="icon-menu-home"/>
+                <img src='images/icon-home.png' className="icon-menu-home" alt="icon"/>
                 <p className="navbar-p home-p">Início</p>
               </NavLink>
             </li>
             <li>
               <NavLink to="/sobre" className="nav-link" onClick={() => handleScroll('about')}>
-                <img src='images/icon-about.png' className="icon-menu-about"/>
+                <img src='images/icon-about.png' className="icon-menu-about" alt="icon"/>
                 <p className="navbar-p">Sobre</p>
               </NavLink>
             </li>
             <li>
               <NavLink to="/contato" className="nav-link" onClick={() => handleScroll('contact')}>
-                <img src='images/icon-contact.png' className="icon-menu-contact"/>
+                <img src='images/icon-contact.png' className="icon-menu-contact" alt="icon"/>
                 <p className="navbar-p members-p">Contato</p>
               </NavLink>
             </li>

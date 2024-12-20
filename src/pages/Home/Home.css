@@ -270,12 +270,14 @@ textarea{
     }
     .contact-founders{
         font-size: 1.4em;
+        padding-top: 2em;
     }
     .founders{
         flex-direction: column;
     }
     .form-box{
         width: 20em;
+        padding-top: 4em;
     }
     form{
         height: 32em;
@@ -386,5 +388,11 @@ textarea{
     }
     form{
         padding: 2em;
+        width: 25em;
+        height: 35em;
+    }
+    .contact-founders{
+        font-size: 1.5em;
+        padding-top: 2em;
     }
 }
