@@ -207,11 +207,11 @@ function Home() {
                         <img src='images/icon-contact-black.png'  alt="icon" className="icon-contact-black"/>
                     </div>
                     <p className='fale-conosco'>Fale conosco</p>
-                    <label for="titulo">Título:</label>
+                    <label htmlFor="titulo">Título:</label>
                     <input type="text" id="titulo" name="titulo" required placeholder="Digite um título"/>
-                    <label for="email">E-mail:</label>
+                    <label htmlFor="email">E-mail:</label>
                     <input type="email" id="email" name="email" required placeholder="Digite seu e-mail"/>
-                    <label for="mensagem">Mensagem:</label>
+                    <label htmlFor="mensagem">Mensagem:</label>
                     <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem"></textarea>
                     <button type="submit">Enviar</button>
                 </form>

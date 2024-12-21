@@ -7,20 +7,15 @@ import { useLocation } from 'react-router-dom';
 import './Navbar.css';
 import { useEffect, useState } from "react";
 
+// Context
+import { useScroll } from '../../context/ScrollContext'; 
+
 const Navbar = () => {
-
-
-    //função para rolamento automático na página
-    const handleScroll = (id) => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
-
 
     const location = useLocation();
     const [navClass, setNavClass] = useState('navbar-home');
+    const { handleScroll } = useScroll();  // Usando o context
+
 
     useEffect(() => {
 
@@ -45,7 +40,7 @@ const Navbar = () => {
     <nav className={navClass}>
         <ul>
             <li>
-              <NavLink to="/inicio" className="nav-link">
+              <NavLink to="/inicio" className="nav-link" onClick={() => handleScroll('home')}>
                 <img src='images/icon-home.png' className="icon-menu-home" alt="icon"/>
                 <p className="navbar-p home-p">Início</p>
               </NavLink>
