@@ -25,7 +25,7 @@ const ExploreOption = ({imgSrc, imgId, navId, links, expandedMenu, setExpandedMe
         }
 
         // lógica para selecionar o id da <nav> em questão
-        const navId = 'nav-' + id.slice(-1);
+        const navId = 'nav-' + id.slice(id.indexOf('-') + 1);
 
         // variável dinâmica para manipular a <nav> presente no mesmo container da imgId
         const nav = document.getElementById(navId); 
