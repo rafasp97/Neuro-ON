@@ -1,7 +1,7 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-
 import { useState, useEffect, useMemo} from 'react';
+
+// React Router
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,7 +11,10 @@ import './Home.css';
 // Components
 import Logo from '../../components/Logo/Logo';
 
-// Variants
+// Framer Motion
+import { motion } from 'framer-motion';
+
+// Variants - Framer Motion
 import {animatedText, opacity} from '../../variants/AnimatedVariants'
 
 function Home() {

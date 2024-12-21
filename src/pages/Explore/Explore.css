@@ -2,4 +2,58 @@
     background: var(--background);
     height: 300vh;
     color: var(--words);
+    border: solid red 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-title-explore{
+    border-bottom: solid var(--words) 2px;
+    margin-top: 8em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 19em;
+}
+
+.explorePage h1{
+    font-size: 1.1em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.icon-explore{
+    width: 30px;
+    padding: 0.5em 0em;
+}
+
+
+
+.container-grid{
+    border: solid red 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+.nav-explore{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+    border: solid 2px green;
+    display: none;
+}
+
+.img-explore{
+    width: 100%;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.grid{
+    background-color: aqua;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    border: solid red 1px;
 }
