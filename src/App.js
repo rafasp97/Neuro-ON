@@ -29,7 +29,10 @@ function App() {
               <Route path="/inicio" element={<Home />} />
               <Route path="/sobre" element={<Home />} />
               <Route path="/contato" element={<Home />} />
-            <Route path="/explore" element={<Explore />} />
+            <Route path="/explore" element={<Explore />}>
+                  {/* Rotas filhas aqui */}
+            </Route> 
+              
           </Routes>
           <Footer/>
         </BrowserRouter>

@@ -1,0 +1,30 @@
+.nav-explore{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+    border: solid 2px green;
+    display: none;
+    background: var(--words);
+}
+
+.nav-explore a { /*o <a> interage com o NavLink porque ele é um componente react que renderiza um <a> do html */
+    display: flex; 
+    text-decoration: none; 
+    border: solid red 1px;
+    padding: 0;
+    z-index: 1;
+}
+
+.img-explore{
+    width: 100%;
+    pointer-events: auto;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.grid{
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    border: solid pink 2px;
+}

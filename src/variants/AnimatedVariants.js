@@ -16,10 +16,19 @@ export const animatedText = {
     }
   }
 
-  export const opacity2 = {
-    hidden: { opacity: 0 },
-    visible: { 
-      opacity: 1,
+  export const dropDown = {
+    initial: { y: -100 },
+    animate: { 
+      y:0,
+      transition: { duration: 1.0, ease: 'easeOut' } 
+    }
+  }
+
+  export const controlHeight = {
+    closed: { maxHeight: 'auto' },
+    expansive: { 
+      maxHeight: 'auto',
       transition: { duration: 2.0, ease: 'easeOut', delay: 1.0 } 
+
     }
   }
