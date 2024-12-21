@@ -8,9 +8,10 @@ export const useScroll = () => useContext(ScrollContext);
 
 // Componente que envolve todos os outros dentro do App.js, assim todos sectionID são compartilhados entre páginas.
 export const ScrollProvider = ({ children }) => {
+
     const handleScroll = (sectionId) => {
       setTimeout(() => {
-        const element = document.getElementById(sectionId);
+        const element = document.getElementById(sectionId); //procura pelo sectionID em todos componentes, já q tds estão dentro do context.
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' }); //promove um rolamento fluído até o ponto do nomeado em sectionID
         }
