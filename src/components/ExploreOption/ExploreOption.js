@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
 
 // React Router
 import { NavLink } from 'react-router-dom';
@@ -13,26 +12,42 @@ import { motion } from 'framer-motion';
 // Variants - Framer Motion
 import {controlHeight, dropDown} from '../../variants/AnimatedVariants'
 
-const ExploreOption = ({imgSrc, imgId, navId, links}) => {
-
-    const [expand, setExpand] = useState(false);
+const ExploreOption = ({imgSrc, imgId, navId, links, expandedMenu, setExpandedMenu }) => {
 
     // Controla o menu de opções
     const controlMenuOptions = (id) => {
+
+        // Se o menu clicado já está expandido, fechamos ele
+        if (expandedMenu === id) {
+            setExpandedMenu(null);
+        } else {
+            setExpandedMenu(id); // Expande o menu clicado
+        }
+
         // lógica para selecionar o id da <nav> em questão
         const navId = 'nav-' + id.slice(-1);
+
         // variável dinâmica para manipular a <nav> presente no mesmo container da imgId
         const nav = document.getElementById(navId); 
+
+        const allMenus = document.querySelectorAll('.nav-explore');
+        allMenus.forEach(menu => {
+            if(menu !== nav && menu.style.display === 'block'){
+                menu.style.display = 'none'
+            }
+        }); 
+
         // lógica para abrir e fechar o menu
         if (nav.style.display === 'block') {
             nav.style.display = 'none';
-            setExpand(false);
         } 
         else {
             nav.style.display = 'block';
-            setExpand(true);
         }
-    }
+        
+    };
+
+
   
     // Impede o click com botão direito para não permitir salvar imagens.
     const blockClickRight = (e) => {
@@ -44,21 +59,23 @@ const ExploreOption = ({imgSrc, imgId, navId, links}) => {
     className="grid"
     variants={controlHeight}
     initial={'closed'}
-    animate={expand ? 'expansive' : 'closed'}
+    animate={expandedMenu === imgId ? 'expansive' : 'closed'}
     >
-        <img src={imgSrc}
+        <img 
+        src={imgSrc}
         alt="boximg" 
         className="img-explore" 
         id={imgId}
-        onClick={(e) => controlMenuOptions(e.target.id)}
+        onClick={(e) => controlMenuOptions(imgId)}
         onContextMenu={blockClickRight}
         />
         <motion.nav 
         className='nav-explore' 
         id={navId}
+        //ref={ref}
         variants={dropDown}
-        initial="initial"
-        animate={"animate"}
+        initial='initial'
+        animate={expandedMenu === imgId ? 'animate' : 'initial'}
         >
            {links.map((link, index) => (
             <NavLink key={index} to={link.to}>

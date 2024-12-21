@@ -2,7 +2,6 @@
     background: var(--background);
     height: 300vh;
     color: var(--words);
-    border: solid red 1px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,23 +10,21 @@
 .box-title-explore{
     border-bottom: solid var(--words) 2px;
     margin-top: 8em;
-    width: 19em;
+    width: 22em;
 }
 
 .explorePage h1{
-    font-size: 1.1em;
+    font-size: 1.3em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
 }
 
 .icon-explore{
-    width: 30px;
+    width: 40px;
     padding: 0.5em 0em;
 }
 
-
-
 .container-grid{
-    border: solid red 2px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-top: 3em;
 }

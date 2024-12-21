@@ -1,20 +1,3 @@
-.nav-explore{
-    display: flex;
-    flex-direction: column;
-    font-size: 0.5em;
-    border: solid 2px green;
-    display: none;
-    background: var(--words);
-}
-
-.nav-explore a { /*o <a> interage com o NavLink porque ele é um componente react que renderiza um <a> do html */
-    display: flex; 
-    text-decoration: none; 
-    border: solid red 1px;
-    padding: 0;
-    z-index: 1;
-}
-
 .img-explore{
     width: 100%;
     pointer-events: auto;
@@ -26,5 +9,39 @@
     margin: 1em;
     display: flex;
     flex-direction: column;
-    border: solid pink 2px;
+}
+
+.nav-explore{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+    border: solid 1px;
+    display: none;
+    background: var(--words);
+    border: solid var(--black) 1px;
+
+}
+
+.nav-explore a { /*o <a> interage com o NavLink porque ele é um componente react que renderiza um <a> do html */
+    display: flex; 
+    text-decoration: none; 
+    border-bottom: solid var(--black) 1px;
+    padding: 0.2em 0.5em;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+    color: var(--black);
+    z-index: 1;
+}
+
+.nav-explore a:hover{
+    background: var(--color-elements-hover);
+    color: var(--words);
+    box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-explore a:active{
+    background: var(--color-elements-active);
+    color: black;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }

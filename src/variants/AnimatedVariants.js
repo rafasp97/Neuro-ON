@@ -20,7 +20,7 @@ export const animatedText = {
     initial: { y: -100 },
     animate: { 
       y:0,
-      transition: { duration: 1.0, ease: 'easeOut' } 
+      transition: { duration: 0.5, ease: 'easeOut' } 
     }
   }
 
@@ -29,6 +29,5 @@ export const animatedText = {
     expansive: { 
       maxHeight: 'auto',
       transition: { duration: 2.0, ease: 'easeOut', delay: 1.0 } 
-
     }
   }
