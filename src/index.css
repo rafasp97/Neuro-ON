@@ -6,6 +6,7 @@
   --color-elements-active: #363957;
   --color-elements-hover: #2C2F47; 
   --buttons-background: linear-gradient(94deg, #424668 0%, #2C2F47 84%);
+  --backgroundImgs: #303030;
 }
 
 * {

@@ -38,7 +38,12 @@ const Explore = () => {
               {to: 'img2', name:'cerebro2'},
               {to: 'img3', name:'cerebro3'},
               {to: 'img4', name:'cerebro4'},
+              {to: 'img5', name:'cerebro5'},
+              {to: 'img1', name:'cerebro3'},
+              {to: 'img1', name:'cerebro3'},
+              {to: 'img1', name:'cerebro3'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}
             />
@@ -52,6 +57,7 @@ const Explore = () => {
               {to: 'img2', name:'cerebro4'},
               {to: 'img3', name:'cerebro4'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}
             />
@@ -61,7 +67,11 @@ const Explore = () => {
             navId='nav-3' 
             links={[
               {to: 'img1', name:'cerebro3'},
+              {to: 'img5', name:'cerebro5'},
+              {to: 'img5', name:'cerebro5'},
+              {to: 'img5', name:'cerebro5'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}           
             />
@@ -71,9 +81,10 @@ const Explore = () => {
             navId='nav-4' 
             links={[
               {to: 'img1', name:'cerebro3'},
-              {to: 'img2', name:'cerebro4'},
-              {to: 'img3', name:'cerebro4'},
+              {to: 'img1', name:'cerebro3'},
+
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}            
             />
@@ -83,9 +94,9 @@ const Explore = () => {
             navId='nav-5' 
             links={[
               {to: 'img1', name:'cerebro3'},
-              {to: 'img2', name:'cerebro4'},
-              {to: 'img3', name:'cerebro4'},
+              {to: 'img1', name:'cerebro3'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}            
             />
@@ -95,8 +106,9 @@ const Explore = () => {
             navId='nav-6' 
             links={[
               {to: 'img1', name:'cerebro3'},
-              {to: 'img2', name:'cerebro4'},
+              {to: 'img1', name:'cerebro3'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}           
             />
@@ -109,6 +121,7 @@ const Explore = () => {
               {to: 'img2', name:'cerebro4'},
               {to: 'img3', name:'cerebro4'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}           
             />
@@ -121,6 +134,7 @@ const Explore = () => {
               {to: 'img2', name:'cerebro4'},
               {to: 'img3', name:'cerebro4'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}            
             />
@@ -133,6 +147,7 @@ const Explore = () => {
               {to: 'img2', name:'cerebro4'},
               {to: 'img3', name:'cerebro4'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}           
             />
@@ -145,6 +160,7 @@ const Explore = () => {
               {to: 'img2', name:'cerebro4'},
               {to: 'img3', name:'cerebro4'},
             ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}            
             />
@@ -157,6 +173,20 @@ const Explore = () => {
               {to: 'img2', name:'cerebro4'},
               {to: 'img3', name:'cerebro4'},
             ]}
+            title='Imagem 1'
+            expandedMenu={expandedMenu}
+            setExpandedMenu={setExpandedMenu}           
+            />
+                        <ExploreOption 
+            imgSrc='/images/2.jpg' 
+            imgId='img-12' 
+            navId='nav-12' 
+            links={[
+              {to: 'img1', name:'cerebro3'},
+              {to: 'img2', name:'cerebro4'},
+              {to: 'img3', name:'cerebro4'},
+            ]}
+            title='Imagem 1'
             expandedMenu={expandedMenu}
             setExpandedMenu={setExpandedMenu}           
             />

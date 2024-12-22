@@ -1,5 +1,4 @@
 import React from 'react'
-
 // React Router
 import { NavLink } from 'react-router-dom';
 
@@ -10,9 +9,9 @@ import './ExploreOption.css';
 import { motion } from 'framer-motion';
 
 // Variants - Framer Motion
-import {controlHeight, dropDown} from '../../variants/AnimatedVariants'
+import {controlHeight, dropDown, menuArrow} from '../../variants/AnimatedVariants'
 
-const ExploreOption = ({imgSrc, imgId, navId, links, expandedMenu, setExpandedMenu }) => {
+const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExpandedMenu}) => {
 
     // Controla o menu de opções
     const controlMenuOptions = (id) => {
@@ -26,27 +25,18 @@ const ExploreOption = ({imgSrc, imgId, navId, links, expandedMenu, setExpandedMe
 
         // lógica para selecionar o id da <nav> em questão
         const navId = 'nav-' + id.slice(id.indexOf('-') + 1);
-
         // variável dinâmica para manipular a <nav> presente no mesmo container da imgId
         const nav = document.getElementById(navId); 
 
+        // lógica que verifica se tem algum outro menu aberto
         const allMenus = document.querySelectorAll('.nav-explore');
         allMenus.forEach(menu => {
             if(menu !== nav && menu.style.display === 'block'){
                 menu.style.display = 'none'
             }
-        }); 
-
-        // lógica para abrir e fechar o menu
-        if (nav.style.display === 'block') {
-            nav.style.display = 'none';
-        } 
-        else {
-            nav.style.display = 'block';
-        }
+        });
         
     };
-
 
   
     // Impede o click com botão direito para não permitir salvar imagens.
@@ -60,7 +50,7 @@ const ExploreOption = ({imgSrc, imgId, navId, links, expandedMenu, setExpandedMe
     variants={controlHeight}
     initial={'closed'}
     animate={expandedMenu === imgId ? 'expansive' : 'closed'}
-    >
+    >   
         <img 
         src={imgSrc}
         alt="boximg" 
@@ -69,10 +59,21 @@ const ExploreOption = ({imgSrc, imgId, navId, links, expandedMenu, setExpandedMe
         onClick={(e) => controlMenuOptions(imgId)}
         onContextMenu={blockClickRight}
         />
+        <div className='img-explore-description'>
+            <p className='title-explore'>{title}</p>
+            <motion.img 
+            src="/images/arrow.png" 
+            alt="icon" 
+            className='icon-explore-arrow' 
+            id={'arrow-' + imgId}
+            variants={menuArrow}
+            initial='initial'
+            animate={expandedMenu === imgId ? 'animate' : 'initial'}
+            />
+        </div>
         <motion.nav 
         className='nav-explore' 
         id={navId}
-        //ref={ref}
         variants={dropDown}
         initial='initial'
         animate={expandedMenu === imgId ? 'animate' : 'initial'}

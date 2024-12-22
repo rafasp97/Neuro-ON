@@ -6,7 +6,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className='footer'>
-        <p>© 2024    Nome do projeto - Frase do projeto</p>
+        <p>© 2024    Neuro ON - Um atlas de anatomia humana online</p>
     </div>
   )
 }

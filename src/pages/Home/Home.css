@@ -208,7 +208,7 @@ textarea{
         left: 2.5em;
         top: 35em;
         font-size: 0.65em;
-        letter-spacing: 1px;
+        letter-spacing: 1.2px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
     }
     .icons{
@@ -320,7 +320,7 @@ textarea{
         left: 5.1em;
         top: 32em;
         font-size: 0.7em;
-        letter-spacing: 1.7px;
+        letter-spacing: 2px;
     }
     .icons{
         padding-left: 3.5em;
@@ -353,7 +353,7 @@ textarea{
     .title h4{
         left: 5.2em;
         top: 30em;
-        letter-spacing: 2.3px;
+        letter-spacing: 2.9px;
         font-size: 1em;
     }
     .icons{

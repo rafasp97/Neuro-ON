@@ -64,7 +64,7 @@ function Home() {
             <div className="title-icons">
                 <div className="title">
                     <Logo className='neuroHome'/>
-                    <h4>Medium length hero headline goes here</h4>
+                    <h4>Um atlas de anatomia humana online</h4>
                     <div className="icons">
                         <img src='/images/ufs.png' alt="icon" className='icon'/>
                         <img src='/images/ufs.png' alt="icon" className='icon'/>

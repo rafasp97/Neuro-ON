@@ -12,5 +12,11 @@
     border-top: 1px var(--words) solid;
     width: 100%;
     color: var(--words);
-    font-size: 0.7em;
+    font-size: 0.6em;
+}
+
+@media (min-width: 425px){
+    .footer p{
+        font-size: 0.7em;
+    }
 }
