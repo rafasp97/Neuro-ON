@@ -38,10 +38,6 @@ const Explore = () => {
               {to: 'img2', name:'cerebro2'},
               {to: 'img3', name:'cerebro3'},
               {to: 'img4', name:'cerebro4'},
-              {to: 'img5', name:'cerebro5'},
-              {to: 'img1', name:'cerebro3'},
-              {to: 'img1', name:'cerebro3'},
-              {to: 'img1', name:'cerebro3'},
             ]}
             title='Imagem 1'
             expandedMenu={expandedMenu}

@@ -1,6 +1,6 @@
 .explorePage{
     background: var(--background);
-    height: 200vh;
+    height: 100%;
     color: var(--words);
     display: flex;
     flex-direction: column;
@@ -27,6 +27,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 2em;
+    margin-bottom: 5em;
 }
 
 @media (min-width: 345px){
@@ -49,6 +50,7 @@
 
     .container-grid{
         width: 25em;
+        margin-bottom: 10em;
     }
 }
 
@@ -70,9 +72,6 @@
 }
 
 @media (min-width: 1024px){
-    .explorePage{
-        height: 300vh;
-    }
     .box-title-explore{
         width: 60em;
         margin-top: 10em;
