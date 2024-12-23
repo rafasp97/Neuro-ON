@@ -60,7 +60,7 @@ function Home() {
       });
 
   return (
-    <div>
+    <div className='home'>
         <section id="home" className='section-home'>
             <div className="title-icons">
                 <div className="title">
