@@ -2,7 +2,7 @@ section {
     box-sizing: border-box;
 }
 
-section{
+section * {
     box-sizing: inherit;
 }
 
