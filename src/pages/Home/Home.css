@@ -1,11 +1,13 @@
 .home{
-    height: 100%;
+    width: 100%;
     background: var(--background);
+    padding-bottom: 5em;
 }
 
 .section-home, .section-contact{
     height: 100vh;
     color: var(--words);
+    overflow: hidden;
 }
 
 .section-home h4{
@@ -268,6 +270,7 @@ textarea{
         flex-direction: row;
         justify-content: space-around;
         gap: 3em;
+        overflow: hidden;
     }
     .section-contact h2{
         font-size: 2em;
@@ -276,7 +279,7 @@ textarea{
         font-size: 0.5em;
     }
     .contact-founders{
-        font-size: 1.4em;
+        font-size: 1.1em;
         padding-top: 2em;
     }
     .founders{
@@ -284,10 +287,9 @@ textarea{
     }
     .form-box{
         width: 20em;
-        padding-top: 4em;
     }
     form{
-        height: 32em;
+        height: 29em;
         width: 20em;
         margin-top: 2em;
     }
@@ -350,6 +352,9 @@ textarea{
     .form-box{
         width: 25em;
     }
+    form{
+        height: 32em;
+    }
     
 }
 
@@ -390,8 +395,13 @@ textarea{
     .line{
         width: 60em;
     }
+    .contact-founders{
+        font-size: 1.4em;
+        padding-top: 2em;
+    }
     .form-box{
         width: 30em;
+        padding-top: 4em;
     }
     form{
         padding: 2em;
