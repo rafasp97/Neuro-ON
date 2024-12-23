@@ -191,6 +191,9 @@ textarea{
     box-sizing: border-box;
 }
 
+.alert{
+    color: rgb(160, 14, 1);
+}
 
 
 @media (min-width: 768px){

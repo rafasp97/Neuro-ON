@@ -1,13 +1,23 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 
 const Form = () => {
 
     const form = useRef();
+
+    const [send, setSend] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setSend(false);
+        }, 2000);
+
+        return () => clearTimeout(timer);
+    }, [send])
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -23,6 +33,7 @@ const Form = () => {
                 (result) => {
                     console.log(result.text);
                     form.current.reset();
+                    setSend(true);
                 },
                 (error) => {
                     console.log(error.text);
@@ -44,6 +55,7 @@ const Form = () => {
         <label htmlFor="message">Mensagem:</label>
         <textarea name="message" rows="5" required placeholder="Digite sua mensagem"></textarea>
         <button type="submit" value={"Send"}>Enviar</button>
+        {send && <p className='alert'>Email enviado!</p>}
     </form>
   )
 }
