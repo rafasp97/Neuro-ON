@@ -58,6 +58,7 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
         id={imgId}
         onClick={(e) => controlMenuOptions(imgId)}
         onContextMenu={blockClickRight}
+        searchable="false"
         />
         <div className='img-explore-description'>
             <p className='title-explore'>{title}</p>
