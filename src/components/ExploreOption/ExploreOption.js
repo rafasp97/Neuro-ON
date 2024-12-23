@@ -39,10 +39,13 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
     };
 
   
-    // Impede o click com botão direito para não permitir salvar imagens.
-    const blockClickRight = (e) => {
+    // Bloqueia o click com botão direito para não permitir salvar imagens.
+    // Bloqueia o 'pesquisa virtual' do microsoft edge.
+    const protectImage = (e) => {
         e.preventDefault();
     }
+
+
 
   return (
     <motion.div 
@@ -57,7 +60,8 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
         className="img-explore" 
         id={imgId}
         onClick={(e) => controlMenuOptions(imgId)}
-        onContextMenu={blockClickRight}
+        onContextMenu={protectImage}
+        onMouseEnter={protectImage}
         searchable="false"
         />
         <div className='img-explore-description'>
