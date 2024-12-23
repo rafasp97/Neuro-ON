@@ -1,3 +1,13 @@
+section {
+    box-sizing: border-box;
+}
+
+section{
+    box-sizing: inherit;
+}
+
+
+
 .section-home, .section-contact{
     background: var(--background);
     height: 100vh;
