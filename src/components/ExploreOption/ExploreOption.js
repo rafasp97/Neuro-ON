@@ -45,8 +45,6 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
         e.preventDefault();
     }
 
-
-
   return (
     <motion.div 
     className="grid"

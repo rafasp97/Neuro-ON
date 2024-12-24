@@ -33,12 +33,14 @@ const Explore = () => {
           <img src='/images/icon-button.png'  alt="icon" className='icon-explore'/>
         </motion.div>
         <div className="container-grid">
-          {Object.values(ExploreRef).map(({ title, links }, index) => {
+          {Object.values(ExploreRef)
+           .sort((a, b) => a.title.localeCompare(b.title))  // Ordena por título de forma alfabética
+           .map(({ title, links }, index)=> {
               return (
                 <ExploreOption 
-                imgSrc={'/images/pagExplore/' + index + '.jpg'} 
+                imgSrc={'/images/pagExplore/' + title + '.jpg'} 
                 imgId={'img-' + index} 
-                navId={'nav-1' + index} 
+                navId={'nav-' + index} 
                 links={links}
                 title={title} 
                 expandedMenu={expandedMenu}
