@@ -422,7 +422,7 @@ textarea{
 }
 
 
-@media (max-width: 812px) and (max-height: 500px) {
+@media (max-width: 812px) and (max-height: 500px) and (orientation: landscape) {
 
     .button-explore{
         top: 20em;
