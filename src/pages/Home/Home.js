@@ -163,19 +163,19 @@ function Home() {
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Aneliese Gabriele Feitosa Lorenz <br></br> Graduanda de Medicina</p>
+                                <p>Aneliese Gabriele F. Lorenz <br></br> Graduanda de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Bruno Souza Santana Araujo <br></br> Graduando de Medicina</p>
+                                <p>Bruno Souza S. Araujo <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Flavio de Souza Barros A. Junior <br></br> Graduando de Medicina</p>
+                                <p>Flavio de Souza B. A. Junior <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png' alt="img" className="icon-contact"/>
-                                <p>João Gabriel Santana Trindade <br></br> Graduando de Medicina</p>
+                                <p>João Gabriel S. Trindade <br></br> Graduando de Medicina</p>
                             </div>
                         </div>
                         <div className="founders2">
@@ -189,7 +189,7 @@ function Home() {
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png' alt="img"  className="icon-contact"/>
-                                <p>Pedro Salgueiro Pereira de Castro <br></br> Graduando de Medicina</p>
+                                <p>Pedro Salgueiro P. de Castro <br></br> Graduando de Medicina</p>
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
