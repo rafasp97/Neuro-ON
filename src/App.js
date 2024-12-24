@@ -31,7 +31,7 @@ function App() {
               <Route path="/sobre" element={<Home />} />
               <Route path="/contato" element={<Home />} />
             <Route path="/explore" element={<Explore />} />
-              <Route path="/explore/*" element={<ExploreDetails />} />  {/* Adicionar condicional para páginas /explore/ q não existem */}
+              <Route path="/explore/:linkTo" element={<ExploreDetails />} />  {/* Adicionar condicional para páginas /explore/ q não existem */}
             <Route path="*" element={<Error/>} /> {/* Configurar a página erro */}
           </Routes>
           <Footer/>

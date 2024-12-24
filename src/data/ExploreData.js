@@ -1,5 +1,5 @@
 const ExploreRef = {
-  Ref0: {
+  Data0: {
     title: "Nervos Craniados",
     links: [
       { to: 'img1', name: 'cerebro1' },
@@ -9,7 +9,7 @@ const ExploreRef = {
       { to: 'img4', name: 'cerebro4' }
     ]
   },
-  Ref1: {
+  Data1: {
     title: "Vascularização",
     links: [
       { to: 'img1', name: 'cerebro1' },
@@ -19,7 +19,7 @@ const ExploreRef = {
       { to: 'img4', name: 'cerebro4' }
     ]
   },
-  Ref2: {
+  Data2: {
     title: "Plexo Braquial",
     links: [
       { to: 'img1', name: 'cerebro1' },
@@ -28,15 +28,15 @@ const ExploreRef = {
       { to: 'img4', name: 'cerebro4' }
     ]
   },
-  Ref3: {
+  Data3: {
     title: "Cerebelo",
     links: [
-      { to: 'cerebelo/01', name: 'cerebelo 01' },
-      { to: 'cerebelo/02', name: 'cerebelo 02' },
-      { to: 'cerebelo/03', name: 'cerebelo 03' },
+      { to: 'cerebelo01', name: 'cerebelo 01' },
+      { to: 'cerebelo02', name: 'cerebelo 02' },
+      { to: 'cerebelo03', name: 'cerebelo 03' },
     ]
   },
-  Ref4: {
+  Data4: {
     title: "Cortes Coronais",
     links: [
       { to: 'img1', name: 'cerebro1' },
@@ -45,14 +45,14 @@ const ExploreRef = {
       { to: 'img4', name: 'cerebro4' }
     ]
   },
-  Ref5: {
+  Data5: {
     title: "Meninges e Líquor",
     links: [
       { to: 'img1', name: 'cerebro1' },
       { to: 'img2', name: 'cerebro2' }
     ]
   },
-  Ref6: {
+  Data6: {
     title: "Cortes Sagitais",
     links: [
       { to: 'img1', name: 'cerebro1' },
@@ -61,7 +61,7 @@ const ExploreRef = {
       { to: 'img4', name: 'cerebro4' }
     ]
   },
-  Ref7: {
+  Data7: {
     title: "Sulcos e Giros",
     links: [
       { to: 'img1', name: 'cerebro1' },
@@ -70,7 +70,7 @@ const ExploreRef = {
       { to: 'img4', name: 'cerebro4' }
     ]
   },
-  Ref8: {
+  Data8: {
     title: "Medula",
     links: [
       { to: 'img1', name: 'cerebro1' },
@@ -79,7 +79,7 @@ const ExploreRef = {
       { to: 'img4', name: 'cerebro4' }
     ]
   },
-  Ref9: {
+  Data9: {
     title: "Cortes Transversais",
     links: [
       { to: 'img1', name: 'cerebro1' },

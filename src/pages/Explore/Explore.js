@@ -8,7 +8,7 @@ import './Explore.css';
 import ExploreOption from '../../components/ExploreOption/ExploreOption';
 
 // Data
-import ExploreRef from '../../data/ExploreRef';
+import ExploreData from '../../data/ExploreData';
 
 // Framer Motion
 import { motion } from 'framer-motion';
@@ -33,7 +33,7 @@ const Explore = () => {
           <img src='/images/icon-button.png'  alt="icon" className='icon-explore'/>
         </motion.div>
         <div className="container-grid">
-          {Object.values(ExploreRef)
+          {Object.values(ExploreData)
            .sort((a, b) => a.title.localeCompare(b.title))  // Ordena por título de forma alfabética
            .map(({ title, links }, index)=> {
               return (

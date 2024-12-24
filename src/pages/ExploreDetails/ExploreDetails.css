@@ -1,4 +1,4 @@
 .details{
-    background: black;
+    background: var(--background);
     height: 100vh;
 }

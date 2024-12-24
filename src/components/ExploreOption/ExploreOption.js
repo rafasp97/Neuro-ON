@@ -82,7 +82,7 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
         animate={expandedMenu === imgId ? 'animate' : 'initial'}
         >
            {links.map((link, index) => (
-             <NavLink key={`ket-${title}-${index}`} to={link.to}>
+             <NavLink key={`key-${title}-${index}`} to={`/explore/${link.to}`}>
                 {link.name}
             </NavLink>
            ))}
