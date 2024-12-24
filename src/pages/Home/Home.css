@@ -342,6 +342,7 @@ textarea{
     }
     .button-explore{
         left: 2.8em;
+        top: 22em;
     }
     .section-about h2{
         font-size: 3em;
@@ -421,10 +422,9 @@ textarea{
 }
 
 
-@media (min-width: 768px) and (max-height: 500px) and (orientation: landscape){
+@media (min-width: 500px) and (max-height: 500px) and (orientation: landscape){
 
     .button-explore{
-        position: absolute;
         top: 20em;
         left: 1.2em;
     }
