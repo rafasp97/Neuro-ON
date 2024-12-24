@@ -130,6 +130,7 @@ function Home() {
             variants={animatedText}
             initial="hidden"
             animate={inViewAbout ? 'visible' : 'hidden'}
+            className='last-about-p'
             >
                 Mauris non magna et metus aliquam pretium. Fusce sit amet diam vel elit tincidunt feugiat sit amet a dolor. Vivamus euismod odio at purus posuere, in aliquet nisi efficitur. Suspendisse congue, ligula eu gravida ultrices, metus neque finibus massa, eget condimentum justo lacus id neque. Nulla purus elit, vulputate a gravida nec, mattis vel justo. Morbi ligula sapien, varius et ultricies quis, bibendum vitae est. Vivamus elementum urna et maximus sodales.
             </motion.p>

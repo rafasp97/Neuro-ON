@@ -5,15 +5,13 @@ import './ExploreDetails.css';
 import { useState, useEffect } from 'react';
 
 // React Router
-import { useLocation, useParams } from 'react-router-dom';
+import { useLocation} from 'react-router-dom';
 
 // Database
 import ExploreData from '../../data/ExploreData';
 
 
 const ExploreDetails = () => {
-
-  const { linkTo } = useParams();
 
   const location = useLocation();
   const linkId = location.pathname.slice(9);
@@ -35,18 +33,14 @@ const ExploreDetails = () => {
     // Verifica se o link existe, se não, ativa o erro
     if (validityLink.length === 0) {
       setError(true);  
+      setTitle(linkId.slice(0, -2) + ' ' + linkId.slice(-2));
+      //exemplo de retorno: '/images/' + cerebelo/02' + '/' + index ... faltando apenas o formato.
+      setImages(images.map((src, index) => src + idForImg + '/' + index));
     } else {
       setError(false); 
     }
 
-    setTitle(linkId.slice(0, -2) + ' ' + linkId.slice(-2));
-    
-
-    //exemplo de retorno: '/images/' + cerebelo/02' + '/' + index ... faltando apenas o formato.
-    setImages(images.map((src, index) => src + idForImg + '/' + index));
-
-
-  }, [linkId]);
+  }, [linkId, idForImg]); // eslint-disable-line react-hooks/exhaustive-deps
  
 
   return (
