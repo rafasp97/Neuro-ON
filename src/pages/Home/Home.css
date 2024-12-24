@@ -422,7 +422,7 @@ textarea{
 }
 
 
-@media (min-width: 500px) and (max-height: 500px) and (orientation: landscape){
+@media (max-width: 812px) and (max-height: 420px) {
 
     .button-explore{
         top: 20em;
@@ -431,9 +431,9 @@ textarea{
 
     .section-about p{
         z-index: 10;
-        font-size: 0.7em;
+        font-size: 0.5em;
         width: 88%;
-        font-weight: 500;
+        font-weight: 400;
         padding-top: 0.5em;
     }
 
