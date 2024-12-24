@@ -69,7 +69,7 @@ function Home() {
                     <div className="icons">
                         <img src='/images/ufs.png' alt="icon" className='icon'/>
                         <img src='/images/ufs.png' alt="icon" className='icon'/>
-                </div>
+                    </div>
                 </div>
             </div>
             <div className="images-panel">

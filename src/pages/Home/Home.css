@@ -221,7 +221,7 @@ textarea{
         position: absolute;
         z-index: 1000;
         left: 2.5em;
-        top: 35em;
+        top: 30em;
         font-size: 0.65em;
         letter-spacing: 1.2px;
         text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
@@ -230,6 +230,7 @@ textarea{
         width: 7em;
         padding-left: 1.5em;
         padding-top: 1.5em;
+        padding-bottom: 10em;
     }
     .icon{
         width: 3em;
@@ -239,7 +240,7 @@ textarea{
     }
     .button-explore{
         position: absolute;
-        top: 25em;
+        top: 24em;
         left: 1.2em;
     }
     .section-about h2{
@@ -416,5 +417,32 @@ textarea{
     .contact-founders{
         font-size: 1.5em;
         padding-top: 2em;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+
+    .button-explore{
+        position: absolute;
+        top: 20em;
+        left: 1.2em;
+    }
+
+    .section-about p{
+        z-index: 10;
+        font-size: 0.7em;
+        width: 88%;
+        font-weight: 500;
+        padding-top: 0.5em;
+    }
+
+    .section-about h2{
+        font-size: 1.7em;
+    }
+
+    .line{
+        width: 88%;
+        margin-bottom: 2em;
     }
 }

@@ -3,7 +3,11 @@ import { NavLink } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import './Navbar.css';
 
+
+
 const Navbar = () => {
+
+
   const location = useLocation();
   const [navClass, setNavClass] = useState('navbar-home');
 
@@ -15,6 +19,7 @@ const Navbar = () => {
       setNavClass('navbar-explore');
     }
   }, [location.pathname]);
+
 
   // Usando caminhos relativos a partir da pasta 'public'
   const homeIcon = '/images/icon-home.png';
@@ -28,6 +33,7 @@ const Navbar = () => {
           <NavLink to="/inicio" className="nav-link">
             <img src={homeIcon} className="icon-menu-home" alt="Home" />
             <p className="navbar-p home-p">Início</p>
+            
           </NavLink>
         </li>
         <li>

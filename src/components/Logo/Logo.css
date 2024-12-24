@@ -22,7 +22,7 @@
     .neuroHome{
         display: flex;
         width: 12em;
-        padding-top: 6em;
+        padding-top: 5em;
         padding-left: 0.5em;
         font-size: 3em;
     }
@@ -51,5 +51,17 @@
         font-size: 5em;
         padding-left: 1em;
         padding-top: 4.5em;
+    }
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 1024px) and (orientation: landscape){
+    .neuro-icon{
+        padding-top: 3em;
+        font-size: 0.8em;
+        z-index: 1000;
+        position: relative;
     }
 }
