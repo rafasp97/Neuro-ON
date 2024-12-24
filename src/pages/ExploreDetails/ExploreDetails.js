@@ -47,7 +47,7 @@ const ExploreDetails = () => {
 
 
   }, [linkId]);
-
+ 
 
   return (
     <div className='details'>
