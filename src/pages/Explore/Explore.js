@@ -37,7 +37,8 @@ const Explore = () => {
            .sort((a, b) => a.title.localeCompare(b.title))  // Ordena por título de forma alfabética
            .map(({ title, links }, index)=> {
               return (
-                <ExploreOption 
+                <ExploreOption
+                key={title + index}
                 imgSrc={'/images/pagExplore/' + title + '.jpg'} 
                 imgId={'img-' + index} 
                 navId={'nav-' + index} 

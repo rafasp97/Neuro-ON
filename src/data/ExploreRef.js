@@ -31,10 +31,9 @@ const ExploreRef = {
   Ref3: {
     title: "Cerebelo",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'cerebelo/01', name: 'cerebelo 01' },
+      { to: 'cerebelo/02', name: 'cerebelo 02' },
+      { to: 'cerebelo/03', name: 'cerebelo 03' },
     ]
   },
   Ref4: {

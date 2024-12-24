@@ -11,6 +11,8 @@ import Footer from "./components/Footer/Footer"
 // Pages
 import Home from './pages/Home/Home';
 import Explore from './pages/Explore/Explore';
+import ExploreDetails from './pages/ExploreDetails/ExploreDetails';
+import Error from './pages/Error/Error';
 
 // Context
 import { ScrollProvider } from './context/ScrollContext';
@@ -24,15 +26,13 @@ function App() {
         <BrowserRouter>
           <Navbar/>
           <Routes>
-            {/* Definindo a rota para a Home */}
             <Route path="/" element={<Home />} />
               <Route path="/inicio" element={<Home />} />
               <Route path="/sobre" element={<Home />} />
               <Route path="/contato" element={<Home />} />
-            <Route path="/explore" element={<Explore />}>
-                  {/* Rotas filhas aqui */}
-            </Route> 
-              
+            <Route path="/explore" element={<Explore />} />
+              <Route path="/explore/*" element={<ExploreDetails />} />  {/* Adicionar condicional para páginas /explore/ q não existem */}
+            <Route path="*" element={<Error/>} /> {/* Configurar a página erro */}
           </Routes>
           <Footer/>
         </BrowserRouter>
