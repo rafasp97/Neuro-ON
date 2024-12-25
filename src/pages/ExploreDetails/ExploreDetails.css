@@ -1,4 +1,45 @@
 .details{
     background: var(--background);
-    height: 100vh;
+    height: 100%;
+    border: solid red 1px;
+}
+
+.title-details{
+    color: var(--words);
+    border: solid red 1px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.details-link{
+    display: flex;
+    justify-content: start;
+    border: solid blue 2px;
+    padding-top: 7em;
+}
+
+.back-to-explore{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    font-size: 0.8em;
+    padding-left: 1em;
+    border: solid red 1px;
+}
+
+.details-box{
+    border: solid green 1px;
+    padding: 2em 1em;
+}
+
+.img-anatomy{
+    width: 100%;
+    height: auto;  /* Mantém a proporção da imagem */
+    max-width: 100%;  /* A largura máxima será a largura do contêiner */
+    max-height: 100%; /* A altura máxima será a altura do contêiner */
+    object-fit: contain; /* Ajusta a imagem sem distorcer */
+    cursor: pointer;
+    pointer-events: auto;
+    border: solid red 2px;
 }
