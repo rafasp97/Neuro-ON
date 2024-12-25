@@ -4,12 +4,14 @@
     border: solid red 1px;
 }
 
-.title-details{
+.details-box h1{
     color: var(--words);
+    font-size: 1.3em;
     border: solid red 1px;
     display: flex;
     width: 100%;
     justify-content: center;
+    padding-bottom: 0.5em;
 }
 
 .details-link{
@@ -19,13 +21,22 @@
     padding-top: 7em;
 }
 
-.back-to-explore{
+.details-link a{
     display: flex;
     flex-direction: row;
-    gap: 1em;
-    font-size: 0.8em;
-    padding-left: 1em;
-    border: solid red 1px;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    color: var(--words);
+    font-weight: 500;
+    font-size: 0.6em;
+    padding: 0.5em 0.8em;
+    cursor: pointer;
+    border: solid blue 1px;
+}
+
+.details-icon{
+    width: 15px;
 }
 
 .details-box{

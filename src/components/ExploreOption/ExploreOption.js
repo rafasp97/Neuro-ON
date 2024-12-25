@@ -47,39 +47,39 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
 
   return (
     <motion.div 
-    className="grid"
-    variants={controlHeight}
-    initial={'closed'}
-    animate={expandedMenu === imgId ? 'expansive' : 'closed'}
+        className="grid"
+        variants={controlHeight}
+        initial={'closed'}
+        animate={expandedMenu === imgId ? 'expansive' : 'closed'}
     >   
         <img 
-        src={imgSrc}
-        alt="boximg" 
-        className="img-explore" 
-        id={imgId}
-        onClick={(e) => controlMenuOptions(imgId)}
-        onContextMenu={protectImage}
-        onMouseEnter={protectImage}
-        searchable="false"
+            src={imgSrc}
+            alt="boximg" 
+            className="img-explore" 
+            id={imgId}
+            onClick={(e) => controlMenuOptions(imgId)}
+            onContextMenu={protectImage}
+            onMouseEnter={protectImage}
+            searchable="false"
         />
         <div className='img-explore-description'>
             <p className='title-explore'>{title}</p>
             <motion.img 
-            src="/images/arrow.png" 
-            alt="icon" 
-            className='icon-explore-arrow' 
-            id={'arrow-' + imgId}
-            variants={menuArrow}
-            initial='initial'
-            animate={expandedMenu === imgId ? 'animate' : 'initial'}
+                src="/images/arrow.png" 
+                alt="icon" 
+                className='icon-explore-arrow' 
+                id={'arrow-' + imgId}
+                variants={menuArrow}
+                initial='initial'
+                animate={expandedMenu === imgId ? 'animate' : 'initial'}
             />
         </div>
         <motion.nav 
-        className='nav-explore' 
-        id={navId}
-        variants={dropDown}
-        initial='initial'
-        animate={expandedMenu === imgId ? 'animate' : 'initial'}
+            className='nav-explore' 
+            id={navId}
+            variants={dropDown}
+            initial='initial'
+            animate={expandedMenu === imgId ? 'animate' : 'initial'}
         >
            {links.map((link, index) => (
              <NavLink key={`key-${title}-${index}`} to={`/explore/${link.to}`}>

@@ -13,12 +13,14 @@ import ExploreData from '../../data/ExploreData';
 // Pages
 import Error from '../Error/Error'
 
+// Componenets
+import Carousel from '../../components/Carousel/Carousel';
+
 
 const ExploreDetails = () => {
 
-
-
   const location = useLocation();
+
   const linkId = location.pathname.slice(9);
   const idForImg = linkId.slice(0, -2) + '/' + linkId.slice(-2);
 
@@ -31,6 +33,7 @@ const ExploreDetails = () => {
 
   // useEffect que será chamado sempre que o linkId mudar
   useEffect(() => {
+
     // Busca dentro da 'database' se existe algum link correspondente
     const validityLink = Object.values(ExploreData)
       .map(data => data.links)
@@ -40,21 +43,12 @@ const ExploreDetails = () => {
     // Verifica se o link existe, se não, ativa o erro
     if (validityLink.length !== 0) {
       setError(false);  
+      
 
-    
-      setTitle(
-        (linkId
-          .charAt(0).toUpperCase() // Deixa a primeira letra maíuscula.
-        ) +
-        (linkId
-          .slice(1, -2) // Seleciona tudo que vem antes das duas últimas posições (nome)
-          .replace(/-/g, " ") // Substitui todos os hífens por espaços
-        ) +
-        ' ' // Adiciona um espaço entre o nome e dígito
-        + linkId.slice(-2)  // Seleciona as duass últimas posições (dígitos)
-      );
+      // captura o título da página
+      setTitle(validityLink[0].name);
 
-      //exemplo de retorno: '/images/' + 'anatomy/' cerebelo/02' + '/' + index ... faltando apenas o formato.
+      // exemplo de retorno: '/images/' + 'anatomy/' cerebelo/02' + '/' + index ... faltando apenas o formato.
       const imgAnatomy = Array.from({ length: 4 }, (_, index) => `/images/anatomy/${idForImg}/${index}`);
       setImages(imgAnatomy);
 
@@ -79,13 +73,13 @@ const ExploreDetails = () => {
       // Renderiza a página a partir do endereço http.
       <div className='details'>
         <div className='details-link'>
-          <Link to="/explore" className='back-to-explore'>
-            <img src='/images/affrrow.png' alt='icon'/>
+          <Link to="/explore">
+            <img src='/images/arrow2.png' alt='icon' className='details-icon'/>
             <p>Voltar</p>
           </Link>
         </div>
         <div className="details-box">
-          <h1 className='title'>{title}</h1>
+          <h1>{title}</h1>
           {/* <p>{images[imgId]}.jpg</p> */}
           <img 
             src={`${images[imgId]}.png`} 
@@ -95,7 +89,9 @@ const ExploreDetails = () => {
             onContextMenu={protectImage}
             onMouseEnter={protectImage}
           />
+          
         </div>
+        <Carousel/>
       </div>
     ) : (
       // Renderiza a página error caso o link não seja encontrado.

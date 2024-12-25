@@ -64,7 +64,7 @@ const ExploreRef = {
   Data7: {
     title: "Sulcos e Giros",
     links: [
-      { to: 'img1', name: 'cerebro1' },
+      { to: 'sulcos-e-giros01', name: 'Sulcos e Giros 01' },
       { to: 'img2', name: 'cerebro2' },
       { to: 'img3', name: 'cerebro3' },
       { to: 'img4', name: 'cerebro4' }
