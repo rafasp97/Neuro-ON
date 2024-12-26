@@ -6,12 +6,41 @@
 
 .details-box h1{
     color: var(--words);
-    font-size: 1.3em;
+    font-size: 1.5em;
     border: solid red 1px;
     display: flex;
     width: 100%;
     justify-content: center;
     padding-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.details-box button{
+    width: 10em;
+    font-size: 0.9em;
+}
+
+.details-box h2{
+    color: var(--words);
+    font-size: 0.8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 2em;
+}
+
+.details-box h4{
+    color: var(--words);
+    font-size: 0.5em;
+    text-align: justify;
+    font-weight: normal;
+    padding: 1em 2em;
+    text-indent: 20px;
+}
+
+.details-box p{
+    color: var(--words);
+    font-size: 0.3em;
+    padding: 0em 3em;
+    text-align: justify;
 }
 
 .details-link{
@@ -19,6 +48,7 @@
     justify-content: start;
     border: solid blue 2px;
     padding-top: 7em;
+    padding-bottom: 1em;
 }
 
 .details-link a{
@@ -58,7 +88,80 @@
 }
 
 .details-container-img{
-    width: 20em;
+    margin-top: 0.3em;
+    width: 100%;
     height: auto;
     border: solid red 1px;
+}
+
+@media (min-width: 768px){
+    .alert{
+        display: none;
+    }
+    .details-container-img{
+        width: 40em;
+    }
+    .details-link a{
+        font-size: 0.9em;
+    }
+    .details-icon{
+        width: 20px;
+    }
+    .details-box h1{
+        font-size: 2em;
+        padding-bottom: 0em;
+    }
+    
+    .details-box button{
+        font-size: 1.1em;
+    }
+    
+    .details-box h2{
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+    
+    .details-box h4{
+        font-size: 0.7em;
+    }
+    
+    .details-box p{
+        font-size: 0.5em;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    .details-container-img{
+        width: 45em;
+    }
+    .details-box h1{
+        font-size: 3em;
+    }
+    
+    .details-box button{
+        font-size: 1.3em;
+    }
+    .details-box h2{
+        font-size: 2em;
+    }
+    
+    .details-box h4{
+        font-size: 0.8em;
+        padding: 1em 3.2em;
+    }
+    
+    .details-box p{
+        font-size: 0.6em;
+        padding: 0em 4.3em;
+    }
+}
+
+@media (min-width: 1440px){
+    .details-container-img{
+        width: 55em;
+    }
+    .details-box h1{
+        font-size: 2.8em;
+    }
 }

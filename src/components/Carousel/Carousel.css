@@ -1,12 +1,12 @@
 .carousel{
     border: solid blue 3px;
-    padding: 0em 1em 10em 1em;
+    padding: 2em 1em 5em 1em;
 }
 .carousel p{
     border: solid red 1px;
     display: flex;
     color: var(--words);
-    font-size: 0.6em;
+    font-size: 0.5em;
 }
 .carousel-container{
     border: solid pink 1px;
@@ -48,4 +48,35 @@
 
 .button-left{
     transform: rotate(180deg)
+}
+
+@media (min-width: 768px){
+    .carousel{
+        font-size: 2.2em;
+
+    }
+    .carousel p{
+        font-size: 0.3em;
+    }
+
+    .carousel-container{
+        margin: 0.2em 0em;
+    }
+
+}
+
+@media (min-width: 1024px){
+    .carousel{
+        font-size: 3em;
+        padding: 1em 1em 5em 1em;
+
+    }
+    .carousel p{
+        font-size: 0.3em;
+    }
+
+    .carousel-container{
+        margin: 0.2em 0em;
+    }
+
 }

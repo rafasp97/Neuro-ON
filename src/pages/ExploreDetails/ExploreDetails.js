@@ -30,7 +30,7 @@ const ExploreDetails = () => {
   const [images, setImages] = useState([]);
   const [imgId, setImgId] = useState(1);
   const [coords, setCoords] = useState({});
-  const [titulo, setTitulo] = useState('');
+  const [titleData, setTitleData] = useState('');
   const [description, setDescription] = useState('');
   const [reference, setReference] = useState('');
 
@@ -60,7 +60,7 @@ const ExploreDetails = () => {
     if (validityLink.length !== 0) {
       
       setError(false);
-      setTitle(validityLink[0].name);
+      setTitle(validityLink[0].name.toUpperCase());
 
 
       //imgId !== 3 ? setCoords(CoordsData[0]) : setCoords(coordinates);
@@ -93,11 +93,20 @@ const ExploreDetails = () => {
 
   const handleAreaClick = (area, index, event) => {
     if(imgId === 3){
-      setTitulo(area.title);
+      setTitleData(area.title);
       setDescription(area.description);
       setReference(area.reference);
     }
   };
+
+  useEffect(() => {
+    if (imgId !== 3) {
+      // Limpa os detalhes se imgId não for 3
+      setTitleData('');
+      setDescription('');
+      setReference('');
+    }
+  }, [imgId]);
 
   return (
     !error ? (
@@ -109,25 +118,34 @@ const ExploreDetails = () => {
           </Link>
         </div>
         <div className="details-box">
+          <h4 className='alert'>Use o modo paisagem ou acesse em uma tela maior para melhor experiência!</h4>
           <h1>{title}</h1>
-            <div ref={containerRef} className='details-container-img'  onContextMenu={protectImage}>
-              <ImgMapper
-                src={`${images[imgId]}.png`} 
-                map={coords}  
-                onClick={handleAreaClick} 
-                onTouchStart={handleAreaClick}
-                responsive={true}
-                parentWidth={parentWidth}
-              />
-            </div>
-        
-          <div>
-            <h1>Interactive Image Map</h1>
-            <h1>{titulo}</h1>
-            <h1>{description}</h1>
-            <h1>{reference}</h1>
+          <div ref={containerRef} className='details-container-img'  onContextMenu={protectImage}>
+            <ImgMapper
+              src={`${images[imgId]}.png`} 
+              map={coords}  
+              onClick={handleAreaClick} 
+              onTouchStart={handleAreaClick}
+              responsive={true}
+              parentWidth={parentWidth}
+            />
           </div>
-          <button onClick={nextImage}>NextImage</button>
+
+          <button onClick={nextImage}>
+            {imgId === 3 ? 'Ocultar Detalhes' : 'Exibir Detalhes'}
+          </button>
+          <div>
+            <h2>{titleData}</h2>
+            <h4>{description}</h4>
+            { reference && (
+              <>
+                  <p>Referências:</p>
+                  <p>{reference}</p>
+              </>
+ 
+            )}
+  
+          </div>
         </div>
         <Carousel/>
       </div>
