@@ -111,7 +111,7 @@ const ExploreDetails = () => {
             <div ref={containerRef} className='details-container-img'  onContextMenu={protectImage}>
               <ImgMapper
                 src={`${images[imgId]}.png`} 
-                map={coords}  
+                map={imgId === 3 ? coords : CoordsData[0]}  
                 onClick={handleAreaClick} 
                 onTouchStart={handleAreaClick}
                 responsive={true}
