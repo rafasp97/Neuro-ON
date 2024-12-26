@@ -92,9 +92,11 @@ const ExploreDetails = () => {
   };
 
   const handleAreaClick = (area, index, event) => {
-    setTitulo(area.title);
-    setDescription(area.description);
-    setReference(area.reference);
+    if(imgId === 3){
+      setTitulo(area.title);
+      setDescription(area.description);
+      setReference(area.reference);
+    }
   };
 
   return (
@@ -111,7 +113,7 @@ const ExploreDetails = () => {
             <div ref={containerRef} className='details-container-img'  onContextMenu={protectImage}>
               <ImgMapper
                 src={`${images[imgId]}.png`} 
-                map={imgId === 3 ? coords : CoordsData[0]}  
+                map={coords}  
                 onClick={handleAreaClick} 
                 onTouchStart={handleAreaClick}
                 responsive={true}
