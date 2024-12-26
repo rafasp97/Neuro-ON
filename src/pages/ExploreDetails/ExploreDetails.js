@@ -113,6 +113,7 @@ const ExploreDetails = () => {
                 src={`${images[imgId]}.png`} 
                 map={coords}  
                 onClick={handleAreaClick} 
+                onTouchStart={handleAreaClick}
                 responsive={true}
                 parentWidth={parentWidth}
               />
