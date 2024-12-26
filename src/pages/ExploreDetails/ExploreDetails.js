@@ -63,9 +63,9 @@ const ExploreDetails = () => {
       setTitle(validityLink[0].name);
 
 
-      imgId !== 3 ? setCoords(CoordsData[0]) : setCoords(coordinates);
+      //imgId !== 3 ? setCoords(CoordsData[0]) : setCoords(coordinates);
 
-      //setCoords(coordinates);
+      setCoords(coordinates);
 
       const imgAnatomy = Array.from({ length: 4 }, (_, index) => `/images/anatomy/${idForImg}/${index}`);
       setImages(imgAnatomy);
