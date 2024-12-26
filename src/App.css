@@ -1,8 +1,8 @@
 /*impede que as imagens sejam baixadas*/
-img {
+/* img {
   user-select: none;
   pointer-events: none;
-}
+} */
 
 textarea {
   resize: none;

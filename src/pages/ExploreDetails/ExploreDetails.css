@@ -40,8 +40,10 @@
 }
 
 .details-box{
-    border: solid green 1px;
-    padding: 2em 1em;
+    border: solid green 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-anatomy{
@@ -53,4 +55,10 @@
     cursor: pointer;
     pointer-events: auto;
     border: solid red 2px;
+}
+
+.details-container-img{
+    width: 20em;
+    height: auto;
+    border: solid red 1px;
 }
