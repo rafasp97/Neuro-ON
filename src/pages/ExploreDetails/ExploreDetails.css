@@ -34,6 +34,11 @@
     text-indent: 20px;
 }
 
+.alert{
+    text-indent: 0px !important;
+    text-align: center !important;
+}
+
 .details-box p{
     color: var(--words);
     font-size: 0.3em;
