@@ -83,9 +83,6 @@ const ExploreDetails = () => {
     }
   };
 
-  console.log(imgId);
-  console.log(CoordsData[0]);
-  console.log(coords);
   // Bloqueia o click com o botão direito
   const protectImage = (e) => {
     e.preventDefault();
@@ -110,7 +107,7 @@ const ExploreDetails = () => {
 
   return (
     !error ? (
-      <div className='details'>
+      <div className='details' id='det'>
         <div className='details-link'>
           <Link to="/explore">
             <img src='/images/arrow2.png' alt='icon' className='details-icon'/>

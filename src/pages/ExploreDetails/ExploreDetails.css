@@ -1,13 +1,12 @@
 .details{
     background: var(--background);
     height: 100%;
-    border: solid red 1px;
+    border: solid red 2px;
 }
 
 .details-box h1{
     color: var(--words);
     font-size: 1.5em;
-    border: solid red 1px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -46,7 +45,6 @@
 .details-link{
     display: flex;
     justify-content: start;
-    border: solid blue 2px;
     padding-top: 7em;
     padding-bottom: 1em;
 }
@@ -62,7 +60,6 @@
     font-size: 0.6em;
     padding: 0.5em 0.8em;
     cursor: pointer;
-    border: solid blue 1px;
 }
 
 .details-icon{
@@ -70,7 +67,6 @@
 }
 
 .details-box{
-    border: solid green 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,14 +80,18 @@
     object-fit: contain; /* Ajusta a imagem sem distorcer */
     cursor: pointer;
     pointer-events: auto;
-    border: solid red 2px;
 }
 
 .details-container-img{
     margin-top: 0.3em;
     width: 100%;
     height: auto;
-    border: solid red 1px;
+}
+
+@media (max-width: 374px){
+    .details-box h4{
+        font-size: 0.4em;
+    }
 }
 
 @media (min-width: 768px){
@@ -123,10 +123,13 @@
     
     .details-box h4{
         font-size: 0.7em;
+        padding-left: 3.2em;
+        padding-right: 3.2em;
     }
     
     .details-box p{
         font-size: 0.5em;
+        padding: 0em 4.5em;
     }
     
 }
@@ -148,20 +151,28 @@
     
     .details-box h4{
         font-size: 0.8em;
-        padding: 1em 3.2em;
+        padding: 1em 3.7em;
     }
     
     .details-box p{
         font-size: 0.6em;
-        padding: 0em 4.3em;
+        padding: 0em 5em;
     }
 }
 
 @media (min-width: 1440px){
+    .details-link{
+        margin-left: 15em;
+        margin-right: 15em;
+    }
+    .details-box{
+        margin: 0em 15em;
+    }
     .details-container-img{
-        width: 55em;
+        width: 50em;
     }
     .details-box h1{
         font-size: 2.8em;
+        padding-bottom: 1em;
     }
 }

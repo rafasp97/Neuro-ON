@@ -59,262 +59,263 @@ const Carousel = () => {
 
   return (
     <div className='carousel'>
-        <p>Imagens relacionadas:</p>
-        <div className="carousel-container" ref={carouselRef}>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
-            <Link to='#' 
-            className="carousel-link"
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            >
-                <div className='item-carousel'>
-                    <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
-                </div>
-            </Link>
+        <div className="border-carousel">
+            <p>Imagens relacionadas:</p>
+            <div className="carousel-container" ref={carouselRef}>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
+                <Link to='#' 
+                className="carousel-link"
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                >
+                    <div className='item-carousel'>
+                        <img src='/images/pagExplore/Cortes Sagitais.jpg' alt='img' className='img-carousel'/>
+                    </div>
+                </Link>
 
+            </div>
         </div>
         <div className='buttons-carousel'>
             <img 
-            src='/images/button-carousel.png' 
-            alt='icon' id='button-left' 
-            className='button-left'
-            onClick={handleLeft}
-            ref={buttonLeftRef}
+                src='/images/button-carousel.png' 
+                alt='icon' id='button-left' 
+                className='button-left'
+                onClick={handleLeft}
+                ref={buttonLeftRef}
             />
             <img 
-            src='/images/button-carousel.png' 
-            alt='icon' id='button-right' 
-            className='button-right'
-            onClick={handleRight}
-            ref={buttonRightRef}
+                src='/images/button-carousel.png' 
+                alt='icon' id='button-right' 
+                className='button-right'
+                onClick={handleRight}
+                ref={buttonRightRef}
             />
         </div>
-       
     </div>
   )
 }
