@@ -88,11 +88,19 @@ const ExploreDetails = () => {
     e.preventDefault();
   };
 
+
+  // Armengo para alterar o espaçamento do paragrâfo na descrição, rs.
+  const desc = document.getElementById('desc');
+
+
   const handleAreaClick = (area, index, event) => {
     if(imgId === 3){
       setTitleData(area.title);
       setDescription(area.description);
       setReference(area.reference);
+    }
+    if(description !== 'Clique em uma das áreas destacadas para mais detalhes.'){
+      desc.style.textIndent = '20px';
     }
   };
 
@@ -104,6 +112,7 @@ const ExploreDetails = () => {
       setReference('');
     }
     if(imgId === 3 && description === ''){
+      desc.style.textIndent = '0px';
       setDescription('Clique em uma das áreas destacadas para mais detalhes.');
     }
   }, [imgId, description]);
@@ -138,7 +147,7 @@ const ExploreDetails = () => {
           </button>
           <div className='details-padding-text'>
             <h2>{titleData}</h2>
-            <h4>{description}</h4>
+            <h4 id='desc'>{description}</h4>
             { reference && (
               <>
                   <p>Referências:</p>
