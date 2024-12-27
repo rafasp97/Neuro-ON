@@ -11,7 +11,12 @@ import { motion } from 'framer-motion';
 // Variants - Framer Motion
 import {controlHeight, dropDown, menuArrow} from '../../variants/AnimatedVariants'
 
+// Context
+import { useScroll } from '../../context/ScrollContext';
+
 const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExpandedMenu}) => {
+
+    const { handleScroll } = useScroll();
 
     // Controla o menu de opções
     const controlMenuOptions = (id) => {
@@ -82,7 +87,7 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
             animate={expandedMenu === imgId ? 'animate' : 'initial'}
         >
            {links.map((link, index) => (
-             <NavLink key={`key-${title}-${index}`} to={`/explore/${link.to}`}>
+             <NavLink key={`key-${title}-${index}`} to={`/explore/${link.to}`} onClick={() => handleScroll('det')}>
                 {link.name}
             </NavLink>
            ))}
