@@ -30,7 +30,7 @@
     font-size: 0.5em;
     text-align: justify;
     font-weight: normal;
-    padding: 1em 2em;
+    padding: 1em 0em;
     text-indent: 20px;
 }
 
@@ -42,8 +42,11 @@
 .details-box p{
     color: var(--words);
     font-size: 0.3em;
-    padding: 0em 3em;
     text-align: justify;
+}
+
+.details-padding-text{
+    padding: 0em 1em;
 }
 
 .details-link{
@@ -127,13 +130,13 @@
     
     .details-box h4{
         font-size: 0.7em;
-        padding-left: 3.2em;
-        padding-right: 3.2em;
     }
     
     .details-box p{
         font-size: 0.5em;
-        padding: 0em 4.5em;
+    }
+    .details-padding-text{
+        padding: 0em 2.1em;
     }
     
 }
@@ -155,12 +158,14 @@
     
     .details-box h4{
         font-size: 0.8em;
-        padding: 1em 3.7em;
+        padding: 1em 0em;
     }
     
     .details-box p{
         font-size: 0.6em;
-        padding: 0em 5em;
+    }
+    .details-padding-text{
+        padding: 0em 3em;
     }
 }
 

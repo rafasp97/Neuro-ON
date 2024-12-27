@@ -131,7 +131,7 @@ const ExploreDetails = () => {
           <button onClick={nextImage}>
             {imgId === 3 ? 'Ocultar Detalhes' : 'Exibir Detalhes'}
           </button>
-          <div>
+          <div className='details-padding-text'>
             <h2>{titleData}</h2>
             <h4>{description}</h4>
             { reference && (
