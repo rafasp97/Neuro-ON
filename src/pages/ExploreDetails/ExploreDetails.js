@@ -18,6 +18,11 @@ import Error from '../Error/Error'
 import Carousel from '../../components/Carousel/Carousel';
 import ImgMapper from 'react-img-mapper';
 
+// Frame Motion
+import { motion } from "framer-motion";
+import TypingEffect from '../../components/TypingEffect/TypingEffect';
+import { opacity, animatedText} from '../../variants/AnimatedVariants';
+
 
 const ExploreDetails = () => {
   const location = useLocation();
@@ -37,42 +42,48 @@ const ExploreDetails = () => {
   const containerRef = useRef(null);
   const [parentWidth, setParentWidth] = useState(0);
 
+
   // Atualizar a largura do contêiner sempre que o tamanho mudar
   useEffect(() => {
-    if (containerRef.current) {
-      setParentWidth(containerRef.current.getBoundingClientRect().width);
-    }
-  }, []); // Atualiza uma vez após a renderização
+    const handleResize = () => {
+      if (containerRef.current) {
+        setParentWidth(containerRef.current.getBoundingClientRect().width);
+      }
+    };
+  
+    // Adiciona o listener de resize
+    window.addEventListener('resize', handleResize);
+  
+    // Executa a atualização inicial
+    handleResize();
+  
+    // Limpeza do listener de resize ao desmontar o componente
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); 
 
   // useEffect para buscar dados quando o 'linkId' mudar
   useEffect(() => {
-    
     // Busca dentro da 'ExploreData' se existe algum link correspondente
     const validityLink = Object.values(ExploreData)
       .map(data => data.links)
       .flat()
       .filter(link => link.to === linkId);
-
     // Busca dentro da 'CoordsData' se existe alguma coordenada corespondente ao endereço
     const coordinates = Object.values(CoordsData)
       .filter(data => data.name === linkId)[0];
     
     if (validityLink.length !== 0) {
-      
       setError(false);
       setTitle(validityLink[0].name.toUpperCase());
-
-
-      //imgId !== 3 ? setCoords(CoordsData[0]) : setCoords(coordinates);
-
       setCoords(coordinates);
-
       const imgAnatomy = Array.from({ length: 4 }, (_, index) => `/images/anatomy/${idForImg}/${index}`);
       setImages(imgAnatomy);
-
     } else {
       setError(true);
     }
+
   }, [linkId, imgId, idForImg]); // O efeito só será chamado quando 'linkId' ou 'imgId' mudar
 
   const nextImage = () => {
@@ -89,8 +100,8 @@ const ExploreDetails = () => {
   };
 
 
-  // Armengo para alterar o espaçamento do paragrâfo na descrição, rs.
-  const desc = document.getElementById('desc');
+  /* // Armengo para alterar o espaçamento do paragrâfo na descrição, rs.
+  const desc = document.getElementById('desc'); */
 
 
   const handleAreaClick = (area, index, event) => {
@@ -99,9 +110,9 @@ const ExploreDetails = () => {
       setDescription(area.description);
       setReference(area.reference);
     }
-    if(description !== 'Clique em uma das áreas destacadas para mais detalhes.'){
+/*     if(description !== 'Clique em uma das áreas destacadas para mais detalhes.'){
       desc.style.textIndent = '20px';
-    }
+    } */
   };
 
   useEffect(() => {
@@ -111,11 +122,8 @@ const ExploreDetails = () => {
       setDescription('');
       setReference('');
     }
-    if(imgId === 3 && description === ''){
-      desc.style.textIndent = '0px';
-      setDescription('Clique em uma das áreas destacadas para mais detalhes.');
-    }
-  }, [imgId, description]);
+  }, [imgId]);
+
 
   return (
     !error ? (
@@ -128,7 +136,13 @@ const ExploreDetails = () => {
         </div>
         <div className="details-box">
           <h4 className='alert'>Use o modo paisagem ou acesse em uma tela maior para melhor experiência!</h4>
-          <h1>{title}</h1>
+          <motion.h1
+          variants={animatedText}
+          initial='hidden'
+          animate='visible'
+          >
+            {title}
+          </motion.h1>
           <div ref={containerRef} className='details-container-img'  onContextMenu={protectImage}>
             <ImgMapper
               src={`${images[imgId]}.png`} 
@@ -138,23 +152,21 @@ const ExploreDetails = () => {
               responsive={true}
               parentWidth={parentWidth}
               lineWidth={0}
-              
             />
           </div>
-
           <button onClick={nextImage}>
             {imgId === 3 ? 'Ocultar Detalhes' : 'Exibir Detalhes'}
           </button>
           <div className='details-padding-text'>
-            <h2>{titleData}</h2>
-            <h4 id='desc'>{description}</h4>
-            { reference && (
-              <>
-                  <p>Referências:</p>
-                  <p>{reference}</p>
-              </>
- 
-            )}
+            <motion.h2
+            key={`title-${titleData}`}
+            variants={opacity}
+            initial='hidden'
+            animate='visible'
+            >
+              {titleData}
+            </motion.h2>
+            <TypingEffect text={description} refAcad={reference} id='desc'/>
   
           </div>
         </div>

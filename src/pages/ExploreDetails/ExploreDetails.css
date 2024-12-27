@@ -33,7 +33,9 @@
     padding: 1em 0em;
     text-indent: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
 }
+
 
 .alert{
     text-indent: 0px !important;
@@ -164,6 +166,7 @@
     .details-box h4{
         font-size: 0.8em;
         padding: 1em 0em;
+        text-indent: 40px;
     }
     
     .details-box p{
@@ -179,8 +182,13 @@
         margin-left: 15em;
         margin-right: 15em;
     }
+    .details-padding-text{
+        padding: 0em 3em;
+        width: 100%;
+        box-sizing: border-box;
+    }
     .details-box{
-        margin: 0em 15em;
+        padding: 0em 15em;
     }
     .details-container-img{
         width: 50em;
@@ -189,4 +197,8 @@
         font-size: 2.8em;
         padding-bottom: 1em;
     }
+    .details-box h4{
+        box-sizing: border-box;
+    }
+
 }

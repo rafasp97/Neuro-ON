@@ -1,4 +1,5 @@
 
+
 export const animatedText = {
     hidden: { opacity: 0, y: 50 },
     visible: { 
@@ -13,6 +14,14 @@ export const animatedText = {
     visible: { 
       opacity: 1,
       transition: { duration: 2.0, ease: 'easeOut' } 
+    }
+  }
+
+  export const opacityReference = {
+    hidden: { opacity: 0 },
+    visible: { 
+      opacity: 1,
+      transition: { duration: 1.0, ease: 'easeOut', delay: 3.0} 
     }
   }
 
