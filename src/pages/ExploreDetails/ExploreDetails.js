@@ -103,7 +103,10 @@ const ExploreDetails = () => {
       setDescription('');
       setReference('');
     }
-  }, [imgId]);
+    if(imgId === 3 && description === ''){
+      setDescription('Clique em uma das áreas destacadas para mais detalhes.');
+    }
+  }, [imgId, description]);
 
   return (
     !error ? (
@@ -125,6 +128,8 @@ const ExploreDetails = () => {
               onTouchStart={handleAreaClick}
               responsive={true}
               parentWidth={parentWidth}
+              lineWidth={0}
+              
             />
           </div>
 

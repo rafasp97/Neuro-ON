@@ -11,6 +11,7 @@
     flex-grow: 1;
     pointer-events: auto;
     cursor: pointer;
+    position: relative;
     z-index: 2;
 }
 
@@ -24,7 +25,6 @@
     bottom: 2.2em;
     display: flex;
     justify-content: space-between;
-    pointer-events: 'none';
 }
 .title-explore{
     letter-spacing: 0.5px;
@@ -39,11 +39,12 @@
     width: 10px;
     height: 10px;
     position: relative;
-    bottom: 0.7em;
+    bottom: 1em;
     background: var(--black);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6);
     padding: 3px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .nav-explore{
@@ -53,7 +54,7 @@
     border: solid 1px;
     border: none;
     position: relative;
-    bottom: 2em;
+    bottom: 2.8em;
 }
 
 .nav-explore a { /*o <a> interage com o NavLink porque ele é um componente react que renderiza um <a> do html */
@@ -119,7 +120,7 @@
     }
 
     .nav-explore{
-        bottom: 2.3em;
+        bottom: 3.28em;
     }
 
     .nav-explore a{
@@ -147,11 +148,11 @@
     .icon-explore-arrow{
         width: 25px;
         height: 25px;
-        bottom: 3.5em;
+        bottom: 3.7em;
     }
 
     .nav-explore{
-        bottom: 3.6em;
+        bottom: 4.55em;
     }
 
     .nav-explore a{

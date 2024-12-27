@@ -32,6 +32,7 @@
     font-weight: normal;
     padding: 1em 0em;
     text-indent: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .alert{
@@ -65,7 +66,7 @@
     color: var(--words);
     font-weight: 500;
     font-size: 0.6em;
-    padding: 0.5em 0.8em;
+    padding: 0.5em 2em;
     cursor: pointer;
 }
 
@@ -110,6 +111,7 @@
     }
     .details-link a{
         font-size: 0.9em;
+        padding-left: 2.4em;
     }
     .details-icon{
         width: 20px;
@@ -142,6 +144,9 @@
 }
 
 @media (min-width: 1024px){
+    .details-link a{
+        padding-left: 3.5em;
+    }
     .details-container-img{
         width: 45em;
     }

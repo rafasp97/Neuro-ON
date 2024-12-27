@@ -57,28 +57,30 @@ const ExploreOption = ({imgSrc, imgId, navId, links, title, expandedMenu, setExp
         initial={'closed'}
         animate={expandedMenu === imgId ? 'expansive' : 'closed'}
     >   
-        <img 
-            src={imgSrc}
-            alt="boximg" 
-            className="img-explore" 
-            id={imgId}
-            onClick={(e) => controlMenuOptions(imgId)}
-            onContextMenu={protectImage}
-            onMouseEnter={protectImage}
-            searchable="false"
-        />
-        <div className='img-explore-description'>
-            <p className='title-explore'>{title}</p>
-            <motion.img 
-                src="/images/arrow.png" 
-                alt="icon" 
-                className='icon-explore-arrow' 
-                id={'arrow-' + imgId}
-                variants={menuArrow}
-                initial='initial'
-                animate={expandedMenu === imgId ? 'animate' : 'initial'}
+        <div onClick={(e) => controlMenuOptions(imgId)}>
+            <img 
+                src={imgSrc}
+                alt="boximg" 
+                className="img-explore" 
+                id={imgId}
+                onContextMenu={protectImage}
+                onMouseEnter={protectImage}
+                searchable="false"
             />
+            <div className='img-explore-description'>
+                <p className='title-explore'>{title}</p>
+                <motion.img 
+                    src="/images/arrow.png" 
+                    alt="icon" 
+                    className='icon-explore-arrow' 
+                    id={'arrow-' + imgId}
+                    variants={menuArrow}
+                    initial='initial'
+                    animate={expandedMenu === imgId ? 'animate' : 'initial'}
+                />
+            </div>
         </div>
+
         <motion.nav 
             className='nav-explore' 
             id={navId}
