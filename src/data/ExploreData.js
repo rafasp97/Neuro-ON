@@ -65,9 +65,16 @@ const ExploreRef = {
     title: "Sulcos e Giros",
     links: [
       { to: 'sulcos-e-giros01', name: 'Sulcos e Giros 01' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'sulcos-e-giros02', name: 'Sulcos e Giros 02' },
+      { to: 'sulcos-e-giros03', name: 'Sulcos e Giros 03' },
+      { to: 'sulcos-e-giros04', name: 'Sulcos e Giros 04' },
+      { to: 'sulcos-e-giros05', name: 'Sulcos e Giros 05' },
+      { to: 'sulcos-e-giros06', name: 'Sulcos e Giros 06' },
+      { to: 'sulcos-e-giros07', name: 'Sulcos e Giros 07' },
+      { to: 'sulcos-e-giros08', name: 'Sulcos e Giros 08' },
+      { to: 'sulcos-e-giros09', name: 'Sulcos e Giros 09' },
+      { to: 'sulcos-e-giros10', name: 'Sulcos e Giros 10' },
+      { to: 'sulcos-e-giros11', name: 'Sulcos e Giros 11' },
     ]
   },
   Data8: {

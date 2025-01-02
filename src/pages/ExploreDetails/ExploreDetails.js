@@ -167,7 +167,6 @@ const ExploreDetails = () => {
               {titleData}
             </motion.h2>
             <TypingEffect text={description} refAcad={reference} id='desc'/>
-  
           </div>
         </div>
         <Carousel/>

@@ -20,7 +20,7 @@ const TypingEffect = ({ text, refAcad}) => {
     // Função para adicionar uma letra por vez
     const typingInterval = setInterval(() => {
       if (index < text.length) {
-        setDisplayText((prevText) => prevText + text[index-1]);
+        setDisplayText((prevText) => prevText + text[index]);
         index++;
       } else {
         clearInterval(typingInterval); // Limpa o intervalo quando o texto é totalmente exibido
