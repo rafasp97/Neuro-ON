@@ -1,13 +1,6 @@
 
-
-import SeG from "./Anatomy/SeG";
-import Cer from "./Anatomy/Cer";
-
-
-
-const CoodsData = [].concat(...[SeG, Cer]);
-
-    /* // esse primeiro objeto é para condicional que impede as areas
+const SeG = [
+    // esse primeiro objeto é para condicional que impede as areas
     // de serem mostradas quando não é a terceira imagem.
     {
         name: "null",
@@ -639,7 +632,7 @@ const CoodsData = [].concat(...[SeG, Cer]);
     },
     {
         name: "sulcos-e-giros10",
-        areas: [,
+        areas: [
             {
                 shape: "rect", 
                 coords: [1,521,213,474],
@@ -683,9 +676,7 @@ const CoodsData = [].concat(...[SeG, Cer]);
             },  
         ],
     },
-
+    
 ];
-*/
 
-
-  export default CoodsData
+  export default SeG
