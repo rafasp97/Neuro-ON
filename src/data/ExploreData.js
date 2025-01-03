@@ -74,7 +74,6 @@ const ExploreRef = {
       { to: 'sulcos-e-giros08', name: 'Sulcos e Giros 08' },
       { to: 'sulcos-e-giros09', name: 'Sulcos e Giros 09' },
       { to: 'sulcos-e-giros10', name: 'Sulcos e Giros 10' },
-      { to: 'sulcos-e-giros11', name: 'Sulcos e Giros 11' },
     ]
   },
   Data8: {

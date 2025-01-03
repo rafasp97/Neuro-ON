@@ -96,6 +96,7 @@
     margin-top: 0.3em;
     width: 100%;
     height: auto;
+    cursor: pointer;
 }
 
 @media (max-width: 374px){
