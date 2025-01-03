@@ -31,9 +31,15 @@ const ExploreRef = {
   Data3: {
     title: "Cerebelo",
     links: [
-      { to: 'cerebelo01', name: 'cerebelo 01' },
-      { to: 'cerebelo02', name: 'cerebelo 02' },
-      { to: 'cerebelo03', name: 'cerebelo 03' },
+      { to: 'cerebelo01', name: 'Cerebelo 01' },
+      { to: 'cerebelo02', name: 'Cerebelo 02' },
+      { to: 'cerebelo03', name: 'Cerebelo 03' },
+      { to: 'cerebelo04', name: 'Cerebelo 04' },
+      { to: 'cerebelo05', name: 'Cerebelo 05' },
+      { to: 'cerebelo06', name: 'Cerebelo 06' },
+      { to: 'cerebelo07', name: 'Cerebelo 07' },
+      { to: 'cerebelo08', name: 'Cerebelo 08' },
+      { to: 'cerebelo09', name: 'Cerebelo 09' }
     ]
   },
   Data4: {
