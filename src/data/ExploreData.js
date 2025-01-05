@@ -61,10 +61,10 @@ const ExploreRef = {
   Data6: {
     title: "Cortes Sagitais",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'cortes-sagitais01', name: 'Cortes Sagitais 01' },
+      { to: 'cortes-sagitais02', name: 'Cortes Sagitais 02' },
+      { to: 'cortes-sagitais03', name: 'Cortes Sagitais 03' },
+      { to: 'cortes-sagitais04', name: 'Cortes Sagitais 04' }
     ]
   },
   Data7: {
