@@ -2,11 +2,7 @@ const ExploreRef = {
   Data0: {
     title: "Nervos Craniados",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'nervos-cranianos01', name: 'Nervos Cranianos 01' }
     ]
   },
   Data1: {
@@ -64,7 +60,7 @@ const ExploreRef = {
       { to: 'cortes-sagitais01', name: 'Cortes Sagitais 01' },
       { to: 'cortes-sagitais02', name: 'Cortes Sagitais 02' },
       { to: 'cortes-sagitais03', name: 'Cortes Sagitais 03' },
-      { to: 'cortes-sagitais04', name: 'Cortes Sagitais 04' }
+      { to: 'cortes-sagitais04', name: 'Cortes Sagitais 04' },
     ]
   },
   Data7: {
@@ -85,10 +81,9 @@ const ExploreRef = {
   Data8: {
     title: "Medula",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'medula01', name: 'Medula 01' },
+      { to: 'medula02', name: 'Medula 02' },
+      { to: 'medula03', name: 'Medula 03' },
     ]
   },
   Data9: {
