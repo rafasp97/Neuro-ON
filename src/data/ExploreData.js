@@ -42,9 +42,15 @@ const ExploreRef = {
     title: "Cortes Coronais",
     links: [
       { to: 'cortes-coronais01', name: 'Cortes Coronais 01' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'cortes-coronais02', name: 'Cortes Coronais 02' },
+      { to: 'cortes-coronais03', name: 'Cortes Coronais 03' },
+      { to: 'cortes-coronais04', name: 'Cortes Coronais 04' },
+      { to: 'cortes-coronais05', name: 'Cortes Coronais 05' },
+      { to: 'cortes-coronais06', name: 'Cortes Coronais 06' },
+      { to: 'cortes-coronais07', name: 'Cortes Coronais 07' },
+      { to: 'cortes-coronais08', name: 'Cortes Coronais 08' },
+      { to: 'cortes-coronais09', name: 'Cortes Coronais 09' },
+      { to: 'cortes-coronais10', name: 'Cortes Coronais 10' }
     ]
   },
   Data5: {
