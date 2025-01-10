@@ -91,10 +91,10 @@ const SeG = [
             {
                 shape: "rect", 
                 coords: [1,514,444,445],
-                title: "Ramo Subparietal do Sulco do Cíngulo",
+                title: "Sulco Subparietal",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
-                description: "  O Ramo Subparietal do Sulco do Cíngulo é uma continuação do Sulco do Cíngulo após a emissão do Ramo Marginal. Esse Sulco é responsável por separar o Pré-cuneo do Giro do Cíngulo.",
+                description: "  O Sulco Subparietal é uma continuação do Sulco do Cíngulo após a emissão do Ramo Marginal. Esse Sulco é responsável por separar o Pré-cuneo do Giro do Cíngulo.",
                 reference: "Vachha BA, Massoud TF, Huang SY. Anatomy of the Cerebral Cortex, Lobes, and Cerebellum. Neuroimaging Clin N Am. 2022 Aug;32(3):463-473. doi: 10.1016/j.nic.2022.04.008. PMID: 35843656."
             },
             {
@@ -174,10 +174,10 @@ const SeG = [
             {
                 shape: "rect", 
                 coords: [268,187,27,152],
-                title: "Ramo Subparietal do Sulco do Cíngulo",
+                title: "Sulco Subparietal",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
-                description: "  O Ramo Subparietal do Sulco do Cíngulo é uma continuação do Sulco do Cíngulo após a emissão do Ramo Marginal. Esse Sulco é responsável por separar o Pré-cuneo do Giro do Cíngulo.",
+                description: "  O Sulco Subparietal é uma continuação do Sulco do Cíngulo após a emissão do Ramo Marginal. Esse Sulco é responsável por separar o Pré-cuneo do Giro do Cíngulo.",
                 reference: "Vachha BA, Massoud TF, Huang SY. Anatomy of the Cerebral Cortex, Lobes, and Cerebellum. Neuroimaging Clin N Am. 2022 Aug;32(3):463-473. doi: 10.1016/j.nic.2022.04.008. PMID: 35843656."
             },
             {
@@ -206,6 +206,15 @@ const SeG = [
                 strokeColor: "rgba(0, 0, 0, 0)",
                 description: "  O Sulco Calcarino é um importante marco anatômico localizado na vista medial do lobo occipital. Essa estrutura se inicia ao nível do esplênio do Corpo Caloso e corre em direção posterior, como uma curvatura com convexidade superior, sendo responsável por separar o Cuneo e o Giro Occipitotemporal Medial. Além disso, é atribuída a essa estrutura funções visuais, pois nos lábios do Sulco Calcarino se encontra a área visual primária do Córtex.",
                 reference: "El Mohamad AR, Tatu L, Moulin T, Fadoul S, Vuillier F. Main anatomical features of the calcarine sulcus: a 3D magnetic resonance imaging at 3T study. Surg Radiol Anat. 2019 Feb;41(2):181-186. doi: 10.1007/s00276-018-2118-x. Epub 2018 Nov 14. PMID: 30430185. | Machado A; Haertel LM. Neuroanatomia funcional. 3. ed. São Paulo: Atheneu, 2014, 340 p. ISBN 9788538804574. | Chauhan P, Rathawa A, Jethwa K, Mehra S. The Anatomy of the Cerebral Cortex. In: Pluta R, editor. Cerebral Ischemia [Internet]. Brisbane (AU): Exon Publications; 2021 Nov 6. Chapter 1. PMID: 34905314."
+            },
+            {
+                shape: "rect", 
+                coords: [134,449,3,403],
+                title: "Sulco Parietoccipital",
+                fillColor: "rgba(0, 0, 0, 0)",
+                strokeColor: "rgba(0, 0, 0, 0)",
+                description: "  O Sulco Parietoccipital é visualizado na vista medial, onde marca o ponto de distinção entre o Lobo Parietal e o lobo occipital. Sua porção posterior se inicia na margem superomedial do hemisfério telencefálico, onde corre em direção ínfero-anterior, podendo se unir à porção anterior do Sulco Calcarino.",
+                reference: "Chauhan P, Rathawa A, Jethwa K, Mehra S. The Anatomy of the Cerebral Cortex. In: Pluta R, editor. Cerebral Ischemia [Internet]. Brisbane (AU): Exon Publications; 2021 Nov 6. Chapter 1. PMID: 34905314."
             },
         ],
     },
@@ -318,7 +327,7 @@ const SeG = [
         areas: [
             {
                 shape: "rect", 
-                coords: [41,151,212,115],
+                coords: [73,180,246,214],
                 title: "Sulco do Cíngulo",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
@@ -327,7 +336,7 @@ const SeG = [
             },
             {
                 shape: "rect", 
-                coords: [351,130,534,98],
+                coords: [358,63,528,98],
                 title: "Sulco Paracentral",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
@@ -336,7 +345,16 @@ const SeG = [
             },
             {
                 shape: "rect", 
-                coords: [560,163,808,132],
+                coords: [708,188,904,229],
+                title: "Sulco Subparietal",
+                fillColor: "rgba(0, 0, 0, 0)",
+                strokeColor: "rgba(0, 0, 0, 0)",
+                description: "  O Sulco Subparietal é uma continuação do Sulco do Cíngulo após a emissão do Ramo Marginal. Esse Sulco é responsável por separar o Pré-cuneo do Giro do Cíngulo.",
+                reference: "Vachha BA, Massoud TF, Huang SY. Anatomy of the Cerebral Cortex, Lobes, and Cerebellum. Neuroimaging Clin N Am. 2022 Aug;32(3):463-473. doi: 10.1016/j.nic.2022.04.008. PMID: 35843656."
+            },
+            {
+                shape: "rect", 
+                coords: [560,76,825,115],
                 title: "Ramo Marginal do Sulco do Cíngulo",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
@@ -345,7 +363,7 @@ const SeG = [
             },
             {
                 shape: "rect", 
-                coords: [763,323,920,288],
+                coords: [765,287,938,323],
                 title: "Sulco Parietoccipital",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
@@ -354,7 +372,7 @@ const SeG = [
             },
             {
                 shape: "rect", 
-                coords: [819,386,941,354],
+                coords: [826,377,947,414],
                 title: "Sulco Calcarino",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
@@ -363,7 +381,7 @@ const SeG = [
             },
             {
                 shape: "rect", 
-                coords: [572,623,721,589],
+                coords: [592,621,733,658],
                 title: "Sulco Colateral",
                 fillColor: "rgba(167, 62, 20, 0)",
                 strokeColor: "rgba(115, 201, 34, 0)",
