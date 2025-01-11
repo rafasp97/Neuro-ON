@@ -13,8 +13,8 @@ const Cer = [
         areas: [
             {
                 shape: "rect", 
-                coords: [111,122,370,85], 
-                title: "Véu Medular Superior", 
+                coords: [781,84,1412,218], 
+                title: "Sulco Frontal Superior", 
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
                 description: "  Parte da arquitetura branca do cerebelo, envolvido em conexões neuronais, facilitando a comunicação entre diferentes regiões cerebelares e outras partes do cérebro.",
