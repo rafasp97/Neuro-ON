@@ -18,10 +18,10 @@ const ExploreRef = {
   Data2: {
     title: "Plexo Braquial",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'plexo-braquial01', name: 'Plexo Braquial 01' },
+      { to: 'plexo-braquial02', name: 'Plexo Braquial 02' },
+      { to: 'plexo-braquial03', name: 'Plexo Braquial 03' },
+      { to: 'plexo-braquial04', name: 'Plexo Braquial 04' }
     ]
   },
   Data3: {
