@@ -56,8 +56,14 @@ const ExploreRef = {
   Data5: {
     title: "Meninges e Líquor",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' }
+      { to: 'meninges-e-liquor01', name: 'Meninges e Líquor 01' },
+      { to: 'meninges-e-liquor02', name: 'Meninges e Líquor 02' },
+      { to: 'meninges-e-liquor03', name: 'Meninges e Líquor 03' },
+      { to: 'meninges-e-liquor04', name: 'Meninges e Líquor 04' },
+      { to: 'meninges-e-liquor05', name: 'Meninges e Líquor 05' },
+      { to: 'meninges-e-liquor06', name: 'Meninges e Líquor 06' },
+      { to: 'meninges-e-liquor07', name: 'Meninges e Líquor 07' },
+      { to: 'meninges-e-liquor08', name: 'Meninges e Líquor 08' }
     ]
   },
   Data6: {
