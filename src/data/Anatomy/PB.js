@@ -665,7 +665,6 @@ const PB = [
                 description: "  O nervo ilioinguinal, originado do ramo ventral de L1 (com possíveis contribuições de T12 ou L2), emerge abaixo do nervo iliohipogástrico e inerva a região inguinal, fornecendo sensibilidade à raiz do pênis e ao escroto nos homens, e ao monte púbico e aos lábios maiores nas mulheres, além de parte da coxa.",
                 reference: "Amudha, G., & Diwan, S. (2021). Anatomy of Lumbar Plexus and Implications to Regional Anaesthesiologist. International Journal of Regional Anaesthesia, 2(2). https://doi.org/10.13107/ijra.2021.v02i02.036"
             },
-
         ],
     },
 ];
