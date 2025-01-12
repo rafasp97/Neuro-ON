@@ -26,18 +26,29 @@ export const animatedText = {
   }
 
   export const dropDown = {
-    initial: { y: -100, opacity: 0, zIndex: 0 },
+    initial: { 
+      y: 0, 
+      opacity: 0, 
+      zIndex: 0,  // Inicialmente o zIndex é 0
+      display: 'none'  // Inicialmente, o display será 'none'
+    },
     animate: {
-      y: [ -100, 0 ], // O elemento se move de -100 para 0
       opacity: [ 0, 1 ], // A opacidade vai de 0 para 1
-      zIndex: [ 0, 1000 ], // O zIndex começa em 0 e vai para 1000
       transition: {
         y: { duration: 1.0, ease: 'easeOut' }, // Duração da animação de movimento
         opacity: { duration: 1.0, ease: 'easeOut' }, // Duração da animação de opacidade
-        zIndex: {
-          duration: 0.1, // O z-index muda rapidamente após a animação
-          delay: 1.0, // Atraso de 1 segundo para mudar o z-index (depois da animação de y e opacity)
-        },
+      },
+      display: 'block', // O display será 'block' quando a animação ocorrer
+      zIndex: 1000,  // Adicionando zIndex 1000 durante a animação
+    },
+    exit: {
+      opacity: 0, // A opacidade vai de 1 para 0 quando sair
+      y: 0,
+      zIndex: 0,  // O zIndex volta para 0 após a animação de saída
+      display: 'none', // O display será 'none' ao finalizar a animação
+      transition: {
+        y: { duration: 1.0, ease: 'easeOut' },
+        opacity: { duration: 1.0, ease: 'easeOut' }
       },
     },
   };

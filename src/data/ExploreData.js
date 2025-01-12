@@ -110,10 +110,16 @@ const ExploreRef = {
   Data10: {
     title: "Tronco Encefálico",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'tronco-encefálico01', name: 'Tronco Encefálico 01' },
+      { to: 'tronco-encefálico02', name: 'Tronco Encefálico 02' },
+      { to: 'tronco-encefálico03', name: 'Tronco Encefálico 03' },
+      { to: 'tronco-encefálico04', name: 'Tronco Encefálico 04' },
+      { to: 'tronco-encefálico05', name: 'Tronco Encefálico 05' },
+      { to: 'tronco-encefálico06', name: 'Tronco Encefálico 06' },
+      { to: 'tronco-encefálico07', name: 'Tronco Encefálico 07' },
+      { to: 'tronco-encefálico08', name: 'Tronco Encefálico 08' },
+      { to: 'tronco-encefálico09', name: 'Tronco Encefálico 09' },
+      { to: 'tronco-encefálico10', name: 'Tronco Encefálico 10' }
     ]
   },
 };
