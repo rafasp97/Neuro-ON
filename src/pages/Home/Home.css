@@ -206,6 +206,14 @@ textarea{
     color: rgb(160, 14, 1);
 }
 
+.p-discentes{
+    margin-bottom: 0.5rem;
+}
+
+.p-orientador{
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
 
 @media (min-width: 768px){
     .section-home{

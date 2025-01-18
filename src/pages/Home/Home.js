@@ -150,11 +150,13 @@ function Home() {
                     <div className="location">
                         <img src='images/icon-location.png'  alt="img" className="icon-location"/>
                         <p>Departamento de Morfologia,<br></br>
-                        Centro de Ciências biológicas da Saúde, UFS</p>
+                        Centro de Ciências biológicas da Saúde, UFS <br></br>
+                        Campus - São Cristovão</p>
                     </div>
                 </div>
                 <div className="founders-box">
                     <h2>FUNDADORES</h2>
+                    <p className='p-discentes'>Discentes - 2024 :</p>
                     <div className="founders">
                         <div className="founders1">
                             <div className="founders-icon-name">
@@ -190,11 +192,16 @@ function Home() {
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png' alt="img"  className="icon-contact"/>
                                 <p>Pedro Salgueiro P. de Castro <br></br> Graduando de Medicina</p>
-                            </div>
+                            </div>                    
+                        </div>
+                    </div>
+                    <p className='p-orientador'>Orientador :</p>
+                    <div className="founders">
+                        <div className="founders1">
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Prof. Dr. Diogo Costa Garção <br></br> Orientador</p>
-                            </div>                       
+                                <p>Prof. Dr. Diogo Costa Garção</p>
+                            </div>                  
                         </div>
                     </div>
                 </div>
