@@ -512,7 +512,7 @@ const SeG = [
                 title: "Sulco Pós-central",
                 fillColor: "rgba(167, 62, 20, 0)",
                 strokeColor: "rgba(115, 201, 34, 0)",
-                description: "  Localizado entre o Giro Central e o Giro Pós-central e percorre paralelamente ao Sulco Pré-central. Pode apresentar-se dividido em dois segmentos, sendo que eles podem estar mais ou menos distantes um do outro. ",
+                description: "  Localizado posteriormente ao giro pós-central e percorre paralelamente ao sulco pré-central. Pode apresentar-se dividido em dois segmentos, sendo que eles podem estar mais ou menos distantes um do outro.",
                 reference: "RHOTON, A. L. THE CEREBRUM. Neurosurgery, v. 61, n. suppl_1, p. SHC-37-SHC-119, 1 jul. 2007. | Chauhan P, Rathawa A, Jethwa K, Mehra S. The Anatomy of the Cerebral Cortex. In: Pluta R, editor. Cerebral Ischemia [Internet]. Brisbane (AU): Exon Publications; 2021 Nov 6. Chapter 1. PMID: 34905314."
             },  
             {
@@ -530,7 +530,7 @@ const SeG = [
                 title: "Sulco Pré-central",
                 fillColor: "rgba(167, 62, 20, 0)",
                 strokeColor: "rgba(115, 201, 34, 0)",
-                description: "  Localizado entre o Giro Central e o Giro Pré-central e percorre paralelamente ao Sulco Pós-central. Pode apresentar-se bifurcado.",
+                description: "  Localizado anteriormente ao giro pré-central e percorre paralelamente ao sulco pós-central. Pode apresentar-se bifurcado.",
                 reference: "Machado A; Haertel LM. Neuroanatomia funcional. 3. ed. São Paulo: Atheneu, 2014, 340 p. ISBN 9788538804574 | RHOTON, A. L. THE CEREBRUM. Neurosurgery, v. 61, n. suppl_1, p. SHC-37-SHC-119, 1 jul. 2007. | Chauhan P, Rathawa A, Jethwa K, Mehra S. The Anatomy of the Cerebral Cortex. In: Pluta R, editor. Cerebral Ischemia [Internet]. Brisbane (AU): Exon Publications; 2021 Nov 6. Chapter 1. PMID: 34905314. | El-Baba RM, Schury MP. Neuroanatomy, Frontal Cortex. 2023 May 29. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2024 Jan–. PMID: 32119370."
             },  
             {

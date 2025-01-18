@@ -378,7 +378,7 @@ const CS = [
             },
             {
                 shape: "rect",
-                coords: [1785,1290,2080,1356],
+                coords: [1674,1230,1890,1291],
                 title: "Núcleo denteado",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
@@ -387,7 +387,7 @@ const CS = [
             },
             {
                 shape: "rect",
-                coords: [1826,1200,2143,1265],
+                coords: [2008,1149,2224,1210],
                 title: "Colículo superior",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
@@ -396,7 +396,7 @@ const CS = [
             },
             {
                 shape: "rect",
-                coords: [1796,1361,2143,1425],
+                coords: [2004,1292,2220,1353],
                 title: "Colículo inferior",
                 fillColor: "rgba(0, 0, 0, 0)",
                 strokeColor: "rgba(0, 0, 0, 0)",
