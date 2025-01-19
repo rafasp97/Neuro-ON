@@ -64,11 +64,11 @@ function Home() {
         event.preventDefault(); // Impede o menu de contexto (clique direito)
     };
 
-    function blockVirtualSearchEdge(event) {
-        event.preventDefault();  // Impede a ação padrão
-        event.stopPropagation(); // Impede a propagação do evento
-    }    
-
+    useEffect(() => {
+        document.querySelectorAll('img').forEach(img => {
+          img.setAttribute('referrerpolicy', 'no-referrer');
+        });
+    }, []); // Isso faz com que a alteração seja feita apenas uma vez, após a primeira renderização.
 
   return (
     <div className='home'>
@@ -93,7 +93,6 @@ function Home() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 2 }} 
                     onContextMenu={handleContextMenu} // Desativa o clique direito
-                    onMouseOver={blockVirtualSearchEdge}
                 />
             </div>
             <button className='button-explore' onClick={() => navigate('/explore')}>

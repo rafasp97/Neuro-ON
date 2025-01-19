@@ -1,9 +1,7 @@
 import './App.css';
 
-import { useEffect } from 'react';
-
 // React Router
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 // Components
 import Navbar from "./components/Navbar/Navbar"
@@ -19,13 +17,6 @@ import Error from './pages/Error/Error';
 import { ScrollProvider } from './context/ScrollContext';
 
 function App() {
-
-  useEffect(() => {
-    document.querySelectorAll('img').forEach(img => {
-      img.setAttribute('referrerpolicy', 'no-referrer');
-    });
-  }, []); // Isso faz com que a alteração seja feita apenas uma vez, após a primeira renderização.
-
 
   return (
     <div className="App">
