@@ -64,13 +64,6 @@ function Home() {
         event.preventDefault(); // Impede o menu de contexto (clique direito)
     };
 
-    // Função para manipular quando o mouse passa sobre a imagem
-    const handleMouseOver = (event) => {
-        event.preventDefault();  // Impede qualquer comportamento padrão
-        console.log("Mouse passou sobre a imagem");
-    };
-
-
 
   return (
     <div className='home'>
@@ -95,7 +88,6 @@ function Home() {
                     exit={{ opacity: 0 }}
                     transition={{ duration: 2 }} 
                     onContextMenu={handleContextMenu} // Desativa o clique direito
-                    onMouseOver={handleMouseOver} // Desativa ao passar o mouse (impede o pesquisa virtual do edge)
 
                 />
             </div>

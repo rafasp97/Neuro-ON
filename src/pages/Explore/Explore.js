@@ -17,9 +17,16 @@ import { motion } from 'framer-motion';
 import { animatedText } from '../../variants/AnimatedVariants'
 
 
+
 const Explore = () => {
 
   const [expandedMenu, setExpandedMenu] = useState(null);
+
+    // Função para manipular quando o mouse passa sobre a imagem
+    const handleMouseOver = (event) => {
+        event.preventDefault();  // Impede qualquer comportamento padrão
+        console.log("Mouse passou sobre a imagem");
+    };
 
   return (
     <div className="explorePage">
