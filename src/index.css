@@ -46,3 +46,7 @@ button:active{
 button:active .icon-button {
   content: url('/public/images/icon-button-click.png'); /* Alteração do src da imagem */
 }
+
+img{
+  -webkit-user-drag: none;
+}
