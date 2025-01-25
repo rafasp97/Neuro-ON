@@ -2006,20 +2006,20 @@ const CC = [
             },
         ],
     },
-    {
-        name: "teste",
-        areas: [
-            {
-                shape: "rect", 
-                coords: [406,186,696,121], 
-                title: "", 
-                fillColor: "rgba(0, 0, 0, 0)",
-                strokeColor: "rgba(0, 0, 0, 0)",
-                description: "  ",
-                reference: ""
-            }, 
-        ],
-    },
+    // {
+    //     name: "teste",
+    //     areas: [
+    //         {
+    //             shape: "rect", 
+    //             coords: [406,186,696,121], 
+    //             title: "", 
+    //             fillColor: "rgba(0, 0, 0, 0)",
+    //             strokeColor: "rgba(0, 0, 0, 0)",
+    //             description: "  ",
+    //             reference: ""
+    //         }, 
+    //     ],
+    // },
 ];
 
   export default CC
