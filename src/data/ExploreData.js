@@ -101,10 +101,11 @@ const ExploreRef = {
   Data9: {
     title: "Cortes Transversais",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'cortes-transversais01', name: 'Cortes Transversais 01' },
+      { to: 'cortes-transversais02', name: 'Cortes Transversais 02' },
+      { to: 'cortes-transversais03', name: 'Cortes Transversais 03' },
+      { to: 'cortes-transversais04', name: 'Cortes Transversais 04' }
+
     ]
   },
   Data10: {
