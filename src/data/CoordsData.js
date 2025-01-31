@@ -9,8 +9,9 @@ import CC from "./Anatomy/CC";
 import MeL from "./Anatomy/MeL";
 import PB from "./Anatomy/PB";
 import CT from "./Anatomy/CT";
+import TE from "./Anatomy/TE";
 
 
-const CoodsData = [].concat(...[SeG, Cer, CS, NC, Med, CC, MeL, PB, CT]);
+const CoodsData = [].concat(...[SeG, Cer, CS, NC, Med, CC, MeL, PB, CT, TE]);
 
 export default CoodsData

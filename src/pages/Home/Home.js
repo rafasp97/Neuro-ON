@@ -76,7 +76,7 @@ function Home() {
             <div className="title-icons">
                 <div className="title">
                     <Logo className='neuroHome'/>
-                    <h4>Um atlas de anatomia humana online</h4>
+                    <h4> O Atlas Online de Neuroanatomia </h4>
                     <div className="icons">
                         <img src='/images/ufs.png' alt="icon" className='icon'/>
                         <img src='/images/ufs.png' alt="icon" className='icon'/>
@@ -103,6 +103,7 @@ function Home() {
 
         <section id="about" className='section-about'>
             <img src='images/brain-background.png' alt="img" className='background-about'/>
+
             <Logo className='neuro-icon'/>
             <motion.h2
             ref={refAbout}
@@ -127,7 +128,7 @@ function Home() {
             initial="hidden"
             animate={inViewAbout ? 'visible' : 'hidden'}
             >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id molestie sem. Nunc vel mi eget quam ornare pulvinar. Mauris gravida, enim ac vestibulum consectetur, dolor quam sollicitudin purus, vitae semper metus dui at mauris. In hac habitasse platea dictumst. Vivamus volutpat iaculis accumsan. Vivamus ultrices finibus tincidunt. Aenean ut scelerisque massa.
+                O NeuroON é uma ferramenta da Universidade Federal de Sergipe (UFS) criada para tornar o ensino de neuroanatomia mais acessível, interativo e completo. 
             </motion.p>
             <motion.p
             ref={refAbout}
@@ -135,7 +136,14 @@ function Home() {
             initial="hidden"
             animate={inViewAbout ? 'visible' : 'hidden'}
             >
-                Integer posuere justo sit amet tortor accumsan vestibulum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum nec suscipit dui, sit amet semper nulla. Donec ultrices orci mauris, et tincidunt orci ornare ac. Praesent porttitor porttitor purus ut rutrum. Morbi eget eros ac arcu mattis viverra ut sed lectus. Phasellus viverra felis in urna consequat, pellentesque finibus mauris consequat. Curabitur blandit purus et condimentum viverra.
+                Nosso objetivo é proporcionar um ambiente de aprendizado moderno e envolvente, combinando rigor científico com facilidade de acesso. A plataforma conta com:
+                <br></br>
+                ✅ Imagens de alta qualidade de peças anatômicas reais;
+                <br></br>
+                ✅ Legendas detalhadas e informativas para melhor compreensão das estruturas;
+                <br></br>
+                ✅ Organização por seções temáticas, facilitando a navegação e o estudo progressivo.
+
             </motion.p>
             <motion.p
             ref={refAbout}
@@ -144,7 +152,8 @@ function Home() {
             animate={inViewAbout ? 'visible' : 'hidden'}
             className='last-about-p'
             >
-                Mauris non magna et metus aliquam pretium. Fusce sit amet diam vel elit tincidunt feugiat sit amet a dolor. Vivamus euismod odio at purus posuere, in aliquet nisi efficitur. Suspendisse congue, ligula eu gravida ultrices, metus neque finibus massa, eget condimentum justo lacus id neque. Nulla purus elit, vulputate a gravida nec, mattis vel justo. Morbi ligula sapien, varius et ultricies quis, bibendum vitae est. Vivamus elementum urna et maximus sodales.
+                O NeuroON é uma ótima opção para estudantes e profissionais da área da saúde que desejam aprofundar seus conhecimentos sobre o sistema nervoso. 
+                <strong> Acesse, explore e aprenda com a gente!</strong>
             </motion.p>
 
         </section>

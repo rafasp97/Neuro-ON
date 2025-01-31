@@ -259,10 +259,10 @@ textarea{
         font-size: 0.9em;
         width: 39em;
         text-align: justify;
-        font-weight: 400;
         margin-bottom: 0.5em;
         line-height: 1.5;
         font-weight: 600;
+        text-indent: 30px;
     }
     
     .background-about{
