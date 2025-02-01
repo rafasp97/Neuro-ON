@@ -143,7 +143,6 @@ function Home() {
                 ✅ Legendas detalhadas e informativas para melhor compreensão das estruturas;
                 <br></br>
                 ✅ Organização por seções temáticas, facilitando a navegação e o estudo progressivo.
-
             </motion.p>
             <motion.p
             ref={refAbout}

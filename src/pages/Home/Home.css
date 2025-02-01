@@ -70,7 +70,8 @@
     width: 88%;
     text-align: justify;
     font-weight: 400;
-    padding-top: 0.5em;
+    padding-top: 1em;
+    text-indent: 30px;
 }
 
 .last-about-p{
@@ -262,7 +263,6 @@ textarea{
         margin-bottom: 0.5em;
         line-height: 1.5;
         font-weight: 600;
-        text-indent: 30px;
     }
     
     .background-about{
