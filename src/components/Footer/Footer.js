@@ -6,7 +6,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className='footer'>
-        <p>© 2024    Neuro ON - Um atlas de anatomia humana online</p>
+        <p>© 2025 Neuro ON - Todos os direitos reservados.</p>
     </div>
   )
 }
