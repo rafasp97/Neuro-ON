@@ -19,10 +19,22 @@
     display: none;
 }
 
+.carousel-link{
+    text-decoration: none;
+}
+
+.carousel-link>p{
+    padding-left: 0.2em;
+    padding-top: 0.5em;
+}
+
 .item-carousel{
     width: 7em;
     display: flex;
     flex-direction: rowss;
+}
+.title-id{
+    text-decoration: none;
 }
 .img-carousel{
     width: 100%;

@@ -10,8 +10,10 @@ import MeL from "./Anatomy/MeL";
 import PB from "./Anatomy/PB";
 import CT from "./Anatomy/CT";
 import TE from "./Anatomy/TE";
+import Vas from "./Anatomy/Vas";
 
 
-const CoodsData = [].concat(...[SeG, Cer, CS, NC, Med, CC, MeL, PB, CT, TE]);
+
+const CoodsData = [].concat(...[SeG, Cer, CS, NC, Med, CC, MeL, PB, CT, TE, Vas]);
 
 export default CoodsData

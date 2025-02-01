@@ -8,11 +8,18 @@ const ExploreRef = {
   Data1: {
     title: "Vascularização",
     links: [
-      { to: 'img1', name: 'cerebro1' },
-      { to: 'img2', name: 'cerebro2' },
-      { to: 'img3', name: 'cerebro3' },
-      { to: 'img4', name: 'cerebro4' },
-      { to: 'img4', name: 'cerebro4' }
+      { to: 'vascularizacao01', name: 'Vascularização 01' },
+      { to: 'vascularizacao02', name: 'Vascularização 02' },
+      { to: 'vascularizacao03', name: 'Vascularização 03' },
+      { to: 'vascularizacao04', name: 'Vascularização 04' },
+      { to: 'vascularizacao05', name: 'Vascularização 05' },
+      { to: 'vascularizacao06', name: 'Vascularização 06' },
+      { to: 'vascularizacao07', name: 'Vascularização 07' },
+      { to: 'vascularizacao08', name: 'Vascularização 08' },
+      { to: 'vascularizacao09', name: 'Vascularização 09' },
+      { to: 'vascularizacao10', name: 'Vascularização 10' },
+      { to: 'vascularizacao11', name: 'Vascularização 11' },
+      { to: 'vascularizacao12', name: 'Vascularização 12' }
     ]
   },
   Data2: {
