@@ -86,6 +86,7 @@ const ExploreDetails = () => {
 
   }, [linkId, imgId, idForImg]); // O efeito só será chamado quando 'linkId' ou 'imgId' mudar
 
+  
   const nextImage = () => {
     if (imgId === 1 || imgId === 2) {
       setImgId(imgId + 1);
@@ -93,6 +94,11 @@ const ExploreDetails = () => {
       setImgId(1);
     }
   };
+
+  // Reseta para o início quando troca de imagem pelo componente carousel
+  useEffect(() => {
+    setImgId(1);
+  }, [location.pathname])
 
   // Bloqueia o click com o botão direito
   const protectImage = (e) => {
@@ -127,9 +133,9 @@ const ExploreDetails = () => {
 
   return (
     !error ? (
-      <div className='details' id='det'>
+      <div className='details'>
         <div className='details-link'>
-          <Link to="/explore">
+          <Link to="/explore" id='det'>
             <img src='/images/arrow2.png' alt='icon' className='details-icon'/>
             <p>Voltar</p>
           </Link>

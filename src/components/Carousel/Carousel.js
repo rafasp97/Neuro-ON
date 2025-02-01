@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 
 import './Carousel.css';
 
@@ -25,70 +25,83 @@ const Carousel = () => {
 
 
     const location = useLocation();
-    const linkId = location.pathname.slice(9,12);
+    const [ids, setIds] = useState([]);
+    const [titles, setTitles] = useState([]);
 
-    const data = CarouselData;
-    const names1 = [];
-    const names2 = [];
+    useEffect(() => {
+        const linkId = location.pathname.slice(9,18);
+    
+        const data = CarouselData;
+        const names1 = [];
+        const names2 = [];
+    
+        // Separa a data pelo link atual
+        for(let i=0; i < data.length; i++){
+            if(data[i].includes(linkId)){
+                names1.push(data[i]);
+            }
+            else {
+                names2.push(data[i]);
+            }
+        }
+        // Embaralha os arrays para seleção sortida;
+        const n = [];
+        const names1Sort = [];
+        while(n.length < names1.length){
+            const random = Math.floor(Math.random() * names1.length);
+            if(!n.includes(random)){
+                n.push(random);
+                names1Sort.push(names1[random]);
+            }
+        }
+        const n2 = [];
+        const names2Sort = [];
+        while(n2.length < names2.length){
+            const random = Math.floor(Math.random() * names2.length);
+            if(!n2.includes(random)){
+                n2.push(random);
+                names2Sort.push(names2[random]);
+            }
+        }
+        
+        
+        // Une os Arrays e coloca o names1Sort (baseado no links da página) para os primeiros links ser de páginas relacionadas.
+        const ids = names1Sort.concat(names2Sort);
 
-    // Separa a data pelo link atual
-    for(let i=0; i < data.length; i++){
-        if(data[i].includes(linkId)){
-            names1.push(data[i]);
+        // Lógica para gerar os títulos
+        const title = [];
+        for(let i=0; i<ids.length; i++){
+            let str = ids[i].slice(0, ids[i].length - 2);
+            const number = ids[i].slice(-2);
+            if(str.includes('vas')){
+                str = 'Vascularização ' + number;
+            }
+            else if(str.includes('men')){
+                str = 'Meninges e Líquor ' + number; 
+            }
+            else if(str.includes('tro')){
+                str = 'Tronco Encefálico ' + number;
+            }
+            else if(str.includes('sulc')){
+                str = 'Sulcos e Giros ' + number;
+            }
+            else if(/^([^-\n]*-[^-\n]*)$/.test(str)){
+                str = str.replace(/-/g, ' ');
+                str = str.replace(/\b\w/g, (char) => char.toUpperCase()); // /\b\w/g padrão para encontrar a primeira letra de cada palavra.
+                str = str + ' ' + number;
+            }
+            else{
+                str = str.charAt(0).toUpperCase() + str.slice(1);
+                str = str + ' ' + number;
+            }
+            title.push(str);
         }
-        else {
-            names2.push(data[i]);
-        }
-    }
-    // Embaralha os arrays para seleção sortida;
-    const n = [];
-    const names1Sort = [];
-    while(n.length < names1.length){
-        const random = Math.floor(Math.random() * names1.length);
-        if(!n.includes(random)){
-            n.push(random);
-            names1Sort.push(names1[random]);
-        }
-    }
-    const n2 = [];
-    const names2Sort = [];
-    while(n2.length < names2.length){
-        const random = Math.floor(Math.random() * names2.length);
-        if(!n2.includes(random)){
-            n2.push(random);
-            names2Sort.push(names2[random]);
-        }
-    }
 
-    // Une os Arrays e coloca o names1Sort (baseado no links da página) para os primeiros links ser de páginas relacionadas.
-    const ids = names1Sort.concat(names2Sort);
-
-    // Lógica para gerar os títulos
-    const title = [];
-    for(let i=0; i<ids.length; i++){
-        let str = ids[i].slice(0, ids[i].length - 2);
-        const number = ids[i].slice(-2);
-        if(str.includes('vas')){
-            str = 'Vascularização ' + number;
-        }
-        else if(str.includes('men')){
-            str = 'Meninges e Líquor ' + number; 
-        }
-        else if(str.includes('tro')){
-            str = 'Tronco Encefálico ' + number;
-        }
-        else if(/^([^-\n]*-[^-\n]*)$/.test(str)){
-            str = str.replace(/-/g, ' ');
-            str = str.replace(/\b\w/g, (char) => char.toUpperCase()); // /\b\w/g padrão para encontrar a primeira letra de cada palavra.
-            str = str + ' ' + number;
-        }
-        else{
-            str = str.charAt(0).toUpperCase() + str.slice(1);
-            str = str + ' ' + number;
-        }
-        title.push(str);
-    }
-
+        setIds(ids);
+        setTitles(title);
+    
+    }, [location.pathname])
+    
 
     const handleLeft = (e) => {
         e.preventDefault();
@@ -148,7 +161,7 @@ const Carousel = () => {
                         <div className='item-carousel'>
                             <img src={`/images/imgsCarousel/${id}.jpg`} alt={id} className='img-carousel'/>
                         </div>
-                        <p>{`${title[index]}`}</p>
+                        <p>{`${titles[index]}`}</p>
                     </Link>
                 ))}
 
