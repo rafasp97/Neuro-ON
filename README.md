@@ -39,17 +39,3 @@ O **NeuroON** já está disponível e funcionando na web!
 
 [🔗 Acesse o NeuroON na Web](https://neuro-on-raph.netlify.app/)  
 
-*Clique no link para visualizar o website!*
-
-## 🤝 Agradecimentos
-
-  Este foi o meu primeiro projeto como **freelancer** 💼, e não poderia estar mais feliz com o resultado! 🎉 Foi uma experiência incrível poder colaborar com esses clientes, que confiaram em mim para criar uma ferramenta tão importante e interativa para o aprendizado da neuroanatomia humana.
-  Agradeço profundamente pela oportunidade de trabalhar em algo tão significativo e desafiador. Desenvolver o **NeuroON** foi uma jornada emocionante e cheia de aprendizado, e estou muito grato por fazer parte desse projeto. 🙏
-
-## 📞 Entre em Contato
-
-Caso tenha dúvidas ou queira conversar sobre o desenvolvimento desse projeto, sinta-se à vontade para entrar em contato! 🚀
-- **E-mail:** rafaelsprata@outlook.com
-- **Telefone:** (79) 99848-4571
-
-
