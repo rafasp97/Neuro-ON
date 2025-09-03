@@ -176,43 +176,25 @@ function Home() {
                 </div>
                 <div className="founders-box">
                     <h2>FUNDADORES</h2>
-                    <p className='p-discentes'>Discentes - 2024 :</p>
+                    <p className='p-discentes'>Discentes - 2025 :</p>
                     <div className="founders">
                         <div className="founders1">
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Airton Lima Batalha Filho <br></br> Graduando de Medicina</p>
+                                <p>Anderson Oliveira Rocha <br></br> Graduando de Sistermas de Informação</p>
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Aneliese Gabriele F. Lorenz <br></br> Graduanda de Medicina</p>
+                                <p>Rafael Souza Prata <br></br> Graduando de Sistermas de Informação</p>
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Bruno Souza S. Araujo <br></br> Graduando de Medicina</p>
+                                <p>Thayla Almeida Figueiredo <br></br> Graduanda de Sistemas de Informação</p>
                             </div>
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Flavio de Souza B. A. Junior <br></br> Graduando de Medicina</p>
+                                <p>Wanessa Silva Santos <br></br> Graduanda de Sistemas de Informação</p>
                             </div>
-                            <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' alt="img" className="icon-contact"/>
-                                <p>João Gabriel S. Trindade <br></br> Graduando de Medicina</p>
-                            </div>
-                        </div>
-                        <div className="founders2">
-                            <div className="founders-icon-name">
-                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Larissa Santos Silva <br></br> Graduanda de Medicina</p>
-                            </div>
-                            <div className="founders-icon-name">
-                                <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Leonardo Machado Martins <br></br> Graduando de Medicina</p>
-                            </div>
-                            <div className="founders-icon-name">
-                                <img src='images/icon-founders.png' alt="img"  className="icon-contact"/>
-                                <p>Pedro Salgueiro P. de Castro <br></br> Graduando de Medicina</p>
-                            </div>                    
                         </div>
                     </div>
                     <p className='p-orientador'>Orientador :</p>
@@ -220,7 +202,7 @@ function Home() {
                         <div className="founders1">
                             <div className="founders-icon-name">
                                 <img src='images/icon-founders.png'  alt="img" className="icon-contact"/>
-                                <p>Prof. Dr. Diogo Costa Garção</p>
+                                <p>Prof. Gilton José Ferreira da Silva</p>
                             </div>                  
                         </div>
                     </div>
